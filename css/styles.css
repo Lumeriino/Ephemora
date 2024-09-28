@@ -3,8 +3,84 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: "Montserrat", sans-serif;
 }
 
-#background-img {
-    background-image: url();
+/* HOME PAGE */
+
+header{
+    height: 100vh;
+    position: relative;
+}
+
+#back_img {
+    /* background-image: url(../media/img/homepage.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    z-index: -1;
+    font-weight: bolder;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu img {
+    height: 100%;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    align-items: center;
+}
+
+#menu ul li {
+    background-color: #0000D2;
+    border-radius: 50px;
+    height: 75%;
+    color: white;
+}
+
+#cart {
+    width: 4em;
+}
+
+#menu_b {
+    width: 12em;
+}
+
+#menu ul li h2, #menu ul li i {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu ul li i {
+    font-size: 1.25em;
+}
+
+#logo {
+    height: 116%;
+    display: flex;
+    align-items: flex-end;
+    padding: 3em 0 0 0;
+}
+
+#logo img {
+    width: 100%;
 }
