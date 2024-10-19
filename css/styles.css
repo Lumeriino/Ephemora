@@ -19,9 +19,18 @@ h1 {
     line-height: 4.5rem;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
 p {
     font-size: 1.2em;
     font-weight: 500;
+}
+
+i {
+    color: #DBE4F5;
 }
 
 
@@ -86,7 +95,7 @@ header{
     width: 60%;
 }
 
-#menu ul li h2, #menu ul li i {
+#menu ul li h3, #menu ul li i {
     height: 100%;
     display: flex;
     align-items: center;
@@ -155,7 +164,8 @@ header{
 .button {
     display: flex;
     justify-content: center;
-    padding: 2em 0 3em;
+    padding: 5em 0;
+    font-weight: 400;
 }
 
 .button span {
@@ -170,6 +180,10 @@ header{
 /* best sellers */
 #best {
     width: 100%;
+}
+
+#best h1 {
+    padding-bottom: 0.5em;
 }
 
 #best img {
@@ -188,6 +202,59 @@ header{
     justify-content: space-between;
 }
 
+.mark {
+    position: absolute;
+    padding: 0.25em;
+    width: 27%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mark > div {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.circle2 {
+    height: 55px;;
+    width: 55px;
+    background:#0000D2;
+    border-radius: 30px;
+}
+
+.circle2 i {
+    height: 100%;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .best_img img {
     width: 100%;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 0.5em;
+}
+
+.best_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ABOUT US */
+#about {
+    height: 100vh;
+    background-color: #0000D2;
+    color: #DBE4F5;
+}
+
+#about h1 {
+    padding-bottom: 1em;
+}
+
+#about > div {
+    text-align: left;
+    width: 50%;
 }
