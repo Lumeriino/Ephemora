@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-weight: 600;
 }
 
@@ -143,14 +143,14 @@ header{
     border-radius:100px;
 }
 
-#caract_all {
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 8em 0;
+.circle i {
+    height: 100%;
     width: 100%;
-}
-
-.caract {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.caract {
     width: 22%;
     display: flex;
     flex-direction: column;
@@ -159,6 +159,13 @@ header{
 
 .caract p {
     padding-top: 1em;
+}
+
+#caract_all {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 8em 0;
+    width: 100%;
 }
 
 .button {
@@ -257,4 +264,9 @@ header{
 #about > div {
     text-align: left;
     width: 50%;
+}
+
+span:hover, .circle2:hover, #cart:hover, #menu_b:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
