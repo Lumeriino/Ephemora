@@ -270,3 +270,95 @@ span:hover, .circle2:hover, #cart:hover, #menu_b:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    padding: 3em 1.5em;
+}
+
+h1, h2, h3 {
+    font-family: "gabriella", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* FAQ */
+#FAQ {
+    display: flex;
+    color: #0000D2;
+    height: 100%;
+    justify-content: center;
+}
+
+
+#conjunto {
+    width: 70%;
+    display: flex;
+    border-radius: 0.25rem;
+    
+}
+
+.preguntas {
+    width: 100%;
+    padding: 2em 2em 0;
+}
+
+.info {
+    width: 100%;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ques {
+    padding: 1em 0;
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+.respuesta {
+    height: auto;
+    padding: 0em 1em 1em;
+    display: none; 
+}
+
+.pregunta i {
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-solid:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+hr {
+    border-color: #0000D2;
+    height: 0.15em;
+    background-color: #0000D2;
+  }
