@@ -144,12 +144,12 @@ header{
 }
 
 .caract img {
+    
     width: 100%;
-    position: relative;
     z-index: 2;
 }
 
-.caract div div i {
+.caract i {
     height: 100%;
     width: 100%;
     font-size: 5em;
@@ -159,6 +159,7 @@ header{
 }
 
 .caract {
+    position: relative;
     width: 22%;
     display: flex;
     flex-direction: column;
