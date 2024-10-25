@@ -63,47 +63,37 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 18vh;
-    padding: 2em 3em;
+    height: 13vh;
+    padding: 1em 3em;
     display: flex;
     justify-content: space-between;
 }
 
-#menu img {
+#menu a img {
     height: 100%;
 }
 
-#menu ul {
+#menu div {
     display: flex;
-    justify-content: space-between;
-    width: 20%;
     align-items: center;
+    justify-content: space-between;
+    width: 20%;  
 }
 
-#menu ul li {
+#cart, #menu_b {
     background-color: #0000D2;
-    border-radius: 50px;
-    height: 75%;
-    color: white;
-}
-
-#cart {
     width: 30%;
-}
-
-#menu_b {
-    width: 60%;
-}
-
-#menu ul li h3, #menu ul li i {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70%;
+    border-radius: 50px;
 }
 
-#menu ul li i {
-    font-size: 1.25em;
+
+#menu_b {
+    width: 60%;
+    color: #DBE4F5;
 }
 
 #logo {
