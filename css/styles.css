@@ -159,11 +159,16 @@ header{
 
 .estrella {
     position: relative;
+    display: inline-block;
 }
 
 .caract img {
     width: 100%;
     z-index: 2;
+}
+.estrella > img {
+    transform: rotate(calc(var(--scroll) * 360deg));
+    transition: transform 0.1s linear;
 }
 
 .caract i {
@@ -179,6 +184,7 @@ header{
     left: 0;
     bottom: 0;
     margin: auto;
+    z-index: 3;
 }
 
 .caract {
@@ -186,6 +192,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .caract p {

@@ -1,3 +1,10 @@
+// scroll
+window.addEventListener('scroll', () => {
+  const scrollValue = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
+  
+  document.querySelectorAll(".rotatingImage").forEach((img)=> {img.style.setProperty('--scroll', scrollValue);
+  });
+});
 
 // FAQ
 const icons = document.querySelectorAll('.fa-plus');
