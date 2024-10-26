@@ -315,7 +315,8 @@ span:hover, .circle2:hover, #cart:hover, #menu_b:hover {
 
 
 /* FAQ */
-#FAQ {
+
+/* #FAQ {
     display: flex;
     color: #0000D2;
     height: 100%;
@@ -368,3 +369,5 @@ hr {
     height: 0.15em;
     background-color: #0000D2;
   }
+
+   */

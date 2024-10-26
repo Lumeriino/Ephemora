@@ -16,6 +16,9 @@
 
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header id="home_page">
@@ -190,69 +193,83 @@
 
     <section id="FAQ">
         <h1>FAQ</h1>
-        <div id="conjunto">
-            <div class="preguntas">
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            How long does a tattoo last?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How long does a tattoo last?
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                         Our tattoos are long lasting, and can last up to 15 days. It is applied in the same way as children's decals, by pressing the paper against the skin and moistening it. The difference with traditional decals is that the ink does not stay on the surface of the skin, but is absorbed by the skin hence its long duration.
-
                     </div>
                 </div>
-                <hr>
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            Are this tattoos waterproof?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Are this tattoos waterproof?
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                         Sure, it will last up to 15 days.
                     </div>
                 </div>
-                <hr>
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            What color will my tattoo be?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What color will my tattoo be?
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                         At the time of the ink will be a bluish color, but about 24 hours later, it will turn after about 24 hours, it will turn into black ink.
                     </div>
                 </div>
-                <hr>
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            Are this tattoos safe?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
-                        Products are 100% safe and hypoallergenic for different skin types. 
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Are this tattoos safe?
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Products are 100% safe and hypoallergenic for different skin types.
                     </div>
                 </div>
-                <hr>
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            How can i remove my tattoo?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    How can i remove my tattoo?
+                </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                         In addition, with each of our tattoos comes with a single dose of a hypoallergenic exfoliating gel, which allows the ink to be removed evenly before the 15 days have passed.
                     </div>
                 </div>
-                <hr>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    What comes in my Ephemora pack?
+                </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo. the tattoo in a uniform way.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="conjunto">
+            <div class="preguntas">
+                
 
                 <div class="info">
                     <div class="pregunta">
@@ -266,7 +283,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <script src="js/script.js"></script>
 
