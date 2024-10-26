@@ -38,6 +38,12 @@ i {
     color: #DBE4F5;
 }
 
+span:hover, #menuToggle:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .subrayado::before {
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -202,13 +208,18 @@ header{
     font-size: 2em;
 }
 
+#menu ul li:first-child i:hover {
+    cursor: pointer;
+}
+
+
 #menu ul li a {
     color: #DBE4F5;
     text-decoration: none;
 }
 
 #logo {
-    height: 116%;
+    height: 102%;
     display: flex;
     align-items: flex-end;
     padding: 3em 0 0 0;
