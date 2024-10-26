@@ -38,6 +38,49 @@ i {
     color: #DBE4F5;
 }
 
+.subrayado::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.subrayado:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.subrayado::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #DBE4F5;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.subrayado {
+    position: relative;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+}
+
 
 /* HOME PAGE */
 
@@ -129,6 +172,7 @@ header{
 
 #logo img {
     width: 100%;
+    z-index: 2;
 }
 
 /* DESCRIPTION */
