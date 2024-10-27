@@ -413,67 +413,321 @@ header{
     width: 50%;
 }
 
-/* span:hover, .circle2:hover, #cart:hover, #menu_b:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-} */
+/*CUSTOMER*/
+.customers-section {
+    margin: 100px 0; /* Espaciado arriba y abajo */
+    text-align: center; /* Centrar el texto */
+}
 
+.customers {
+    display: flex; /* Usar flexbox para alinear imágenes */
+    justify-content: center; /* Centrar imágenes horizontalmente */
+    gap: 10px; /* Espaciado entre imágenes */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias líneas */
+}
 
-/* FAQ */
+.customers img {
+    width: 10%; /* Ancho fijo para todas las imágenes */
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener la proporción de aspecto y llenar el espacio */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid blue; /* Borde azul */
+    transition: all ease-in-out 0.5s; /* Transición suave al hacer hover */
+}
 
-/* #FAQ {
-    display: flex;
-    color: #0000D2;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.customers img:hover {
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño al hacer hover */
 }
 
 
-#conjunto {
+/*SUBSRCIBE*/
+/* Contenedor principal de la suscripción */
+.subscribe {
     width: 70%;
+    margin:auto; 
     display: flex;
-    border-radius: 0.25rem;
+    flex-direction: row;
+    align-items: fcenter; /* Alinear todo a la izquierda */
+}
+
+/* Título de suscripción */
+#subscribe_quest {
+    width: 100%;
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    color: #004AAD; /* Color para que sea visible */
+    margin-bottom: 0.5rem; /* Espacio debajo del título */
+    text-align: left;
+    justify-content: flex-end;
+}
+
+/* Contenedor de email y botón */
+.subscribe_email {
+    width: 100%;
+    display: flex;
+    align-items: end; /* Centrar verticalmente */
+    gap: 0.5rem; /* Espacio entre email y botón */
+
+}
+
+/* Estilo para el campo de email */
+.subscribe_email input[type="email"] {
+    width: 60%;
+    padding-left: 0.5rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 3px solid #004AAD; /* Línea inferior */
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Cambio de color en foco */
+.subscribe_email input[type="email"]:focus {
+    border-bottom: 3px solid #99beef; /* Color al enfocar */
+}
+
+.subscribe_email input[type="submit"] {
+    width: 15%;
+    
+    color: #0000D2;
+    border-radius: 10rem;
+    height: 2rem;
+    border: none;
+    margin-left: 0.5rem;
+    font-size: 1.2rem; /* Aumentar tamaño de la flecha si es necesario */
+    font-weight: bold;
+}
+
+.subscribe_email input[type="submit"]:hover {
+    background-color: #99beef;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    padding-top: 0%;
+    flex-direction: column;
+    background-color: #004AAD;
+    color: #ffffff;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+
+#footer_down > .menu_footer > ul {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#footer_down > .menu_footer > ul > li {
+    padding: 2rem;
     
 }
 
-.preguntas {
-    width: 100%;
-    padding: 2em 2em 0;
+#footer_down > .menu_footer > ul > li:hover {
+    color:black;
+    cursor: pointer;
 }
 
-.info {
-    width: 100%;
+/* Imagen en el footer */
+#footer_down > #logo > .best_img {
+    width: 100%; /* Ocupar todo el ancho */
+    height: auto; /* Mantener proporciones */
+    object-fit: cover; /* Ajustar imagen sin distorsión */
+    z-index: 0;
 }
 
-.pregunta {
-    display: flex;
-    justify-content: space-between;
+
+
+
+
+/* RESPONSIVE IPAD 
+@media screen and (max-width: 1000px) {
+   
+
+   
+
+   
+   
+    #footer_down > .contact_us > p {
+        font-size: xx-small;
+    }
+
+    #footer_down .menu_footer {
+        display: flex;
+        justify-content: end;
+    }
+
+    #footer_down > .support {
+        width: auto;
+    }
+
+    #footer_down > .support > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #footer_down > .support > ul > li {
+        padding: 0;
+    }
+
+   
 }
 
-.ques {
-    padding: 1em 0;
-    font-weight: 900;
-    padding-right: 0.5em;
+@media screen and (max-width: 960px) {
+    #gallery {
+            font-size: 0.5em;
+        }
+
+        #info p {
+            width: 70%;
+            text-align: center;
+        }
+    
+}
+*/
+/* RESPONSIVE MÓVIL 
+@media screen and (max-width: 550px) {
+    main {
+        padding: 0;
+    }
+
+    
+
+    #footer_up {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #footer_up > .footer_title{
+        padding-bottom: 1rem;
+    }
+
+   
+
+    #footer_down {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #footer_down > .contact_us {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    #footer_down > .menu_footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+
+    #footer_down > .support {
+        width: 100%;
+    }
+
+    #footer_down > .support > ul {
+        display: flex;
+        font-size: xx-small;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
-.respuesta {
-    height: auto;
-    padding: 0em 1em 1em;
-    display: none; 
+*/
+/*
+@media screen and (max-width: 1000px) {
+    header {
+        height: auto;  Cambiar a auto para ajustar al contenido 
+    }
+
+    #back_img {
+        height: 50vh;  Ajustar la altura de la imagen de fondo 
+    }
+
+    #menu {
+        flex-direction: column;  Cambiar a columna para más espacio 
+        align-items: flex-start;  Alinear los elementos a la izquierda 
+        padding: 1em;  Añadir padding para espacio 
+    }
+
+    #menu > div {
+        width: 100%;  Cambiar a 100% para ocupar todo el ancho 
+        justify-content: space-between;  Mantener espacio entre los elementos 
+    }
+
+    #menuToggle, #cart {
+        width: 40%;  Ajustar el tamaño de los botones 
+        margin-bottom: 1em; Espaciado entre botones 
+    }
+
+    #menu ul {
+        width: 100%;  Hacer que el menú ocupe el 100% del ancho 
+        padding: 1em; Añadir espacio en el menú 
+    }
+
+    #logo img {
+        width: 80%;  Ajustar el logo para que se vea bien 
+    }
 }
 
-.pregunta i {
-    display: flex;
-    align-items: center;
+
+@media screen and (max-width: 550px) {
+    header {
+        height: auto;  De nuevo, ajusta a auto 
+    }
+
+    #back_img {
+        height: 40vh; Ajustar aún más la imagen de fondo 
+    }
+
+    #menu {
+        flex-direction: column;  Mantener la disposición en columna 
+    }
+
+    #menu > div {
+        width: 100%;  Asegurarse que ocupe todo el ancho 
+    }
+
+    #cart, #menuToggle {
+        width: 80%;  Aumentar el tamaño de los botones para móviles 
+        margin: 0 auto;  Centrar botones 
+    }
+
+    #menu ul {
+        width: 100%;  Mantener el ancho completo del menú 
+        padding: 0;  Reducir el padding 
+    }
+
+    #menu ul li {
+        padding: 0.5em; Reducir el padding de los elementos del menú 
+        font-size: 1.2em;  Reducir el tamaño de fuente para mejor ajuste 
+    }
+
+    #logo img {
+        width: 100%;  Hacer que el logo ocupe el 100% del ancho 
+        height: auto;  Mantener la proporción de aspecto 
+    }
+
+    h1 {
+        font-size: 3em;  Reducir tamaño de h1
+    }
+
+    h2 {
+        font-size: 1.5em;  Reducir tamaño de h2 
+    }
+
+    p {
+        font-size: 1em;  Reducir tamaño de p 
+    }
 }
-
-hr {
-    border-color: #0000D2;
-    height: 0.15em;
-    background-color: #0000D2;
-  }
-
-   */
+*/
