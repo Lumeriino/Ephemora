@@ -20,7 +20,7 @@ icons.forEach(icon => {
   });
 });
 
-// Selecciona el menú y el icono del menú
+// menu
 const menu = document.getElementById("menu");
 const menuToggle = document.getElementById("menuToggle");
 const closeMenu = document.getElementById("closeMenu");
@@ -46,3 +46,30 @@ closeMenu.addEventListener("click", closeMenuHandler);
 menuLinks.forEach(link => {
     link.addEventListener("click", closeMenuHandler);
 });
+
+// aplication
+const button = document.getElementById("button");
+const applicationElement = document.getElementById("application");
+const closeApp = document.getElementById("closeApp");
+// const menuLinks = document.querySelectorAll(".menuLink");
+
+// Función para alternar el menú
+function toggleApplication() {
+    button.classList.toggle("active"); // Alternar la clase 'active' en el menú
+}
+
+// Función para cerrar el menú
+function closeAppHandler() {
+    button.classList.remove("active"); // Quitar la clase 'active' para cerrar el menú
+}
+
+// Asignar el evento de clic al ícono del menú
+applicationElement.addEventListener("click", toggleApplication);
+
+// Asignar el evento de clic al ícono de cerrar menú
+closeApp.addEventListener("click", closeAppHandler);
+
+// Asignar evento a los enlaces del menú
+// menuLinks.forEach(link => {
+//     link.addEventListener("click", closeAppHandler);
+// });

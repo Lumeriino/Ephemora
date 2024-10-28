@@ -15,23 +15,27 @@ section {
 }
 
 h1 {
-    font-size: 5em;
-    line-height: 4.5rem;
+    font-size: 5em !important;
+    line-height: 3.5rem !important;
+    font-weight: 700 !important;
+    padding-top: 1em !important;
 }
 
 h2 {
-    font-size: 2.25em;
-    font-weight: 600;
+    font-size: 2.25em !important;
+    font-weight: 600 !important;
+    margin-bottom: 0rem !important;
 }
 
 h3 {
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    margin-bottom: 0rem !important;
 }
 
 p {
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.2em !important;
+    font-weight: 500 !important;
 }
 
 i {
@@ -68,6 +72,10 @@ span:hover, #menuToggle:hover {
     transition: transform .3s ease;
 }
 
+.subrayado {
+    position: relative;
+}
+
 .subrayado2 {
     position: relative;
 }
@@ -96,10 +104,33 @@ span:hover, #menuToggle:hover {
     transition: transform .3s ease;
 }
 
-.subrayado {
+.subrayado3 {
     position: relative;
 }
 
+.subrayado3::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.subrayado3:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.subrayado3::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #ffffff;
+    z-index: -1;
+    transition: transform .3s ease;
+}
 
 html {
     block-size: 100%;
@@ -223,17 +254,19 @@ header{
     display: flex;
     align-items: flex-end;
     padding: 3em 0 0 0;
+    /* z-index: 2; */
+
 }
 
 #logo img {
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* DESCRIPTION */
 #description {
     background-color: white;
-    z-index: 1;
+    /* z-index: 1; */
     height: 100%;
 }
 
@@ -241,6 +274,9 @@ header{
     width: 100%;
 }
 
+#description h1 {
+    padding-top: 0 !important;
+}
 #des {
     padding: 0 8em;
 }
@@ -248,13 +284,6 @@ header{
 #title {
     padding: 3em 0 3em;
 }
-
-/* .circle {
-    height:170px;
-    width:170px;
-    background:#0000D2;
-    border-radius:100px;
-} */
 
 .estrella {
     position: relative;
@@ -308,7 +337,7 @@ header{
 .button {
     display: flex;
     justify-content: center;
-    padding: 5em 0;
+    padding: 4em 0 2em;
     font-weight: 400;
 }
 
@@ -320,6 +349,49 @@ header{
     padding: 2em;
     border-radius: 50px;
 }
+
+#button div {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 58%;
+    background-color: #DBE4F5;
+    color: #0000D2;
+    height: 100vh;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 3em;
+    z-index: 5 !important;
+    align-items: center;
+}
+
+#button div h2 {
+    width: 68%;
+}
+
+#button i {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+#button img {
+    height: 75%;
+    object-fit: contain;
+    padding: 1em 0;
+}
+
+#button p {
+    background-color: #ffffff;
+    padding: 0.2em;
+}
+
+#button.active div {
+    right: 0;
+}
+
 
 /* best sellers */
 #best {
@@ -342,28 +414,15 @@ header{
 
 #best_s {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
 }
 
-/* .mark {
-    position: absolute;
-    padding: 0.25em;
-    width: 27%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.mark > div {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-} */
-.mark{
+.mark {
     position: absolute;
     display: flex;
     padding: 0.5em;
     flex-direction: column;
+    background: none !important;
 }
 
 .mark > .circle2:first-child {
@@ -411,6 +470,28 @@ header{
 #about > div {
     text-align: left;
     width: 50%;
+}
+
+/* faq */
+#FAQ{
+    height: 100vh;
+}
+
+#FAQ h1 {
+    padding-bottom: 0.5em;
+}
+
+.accordion-body {
+    font-size: 1.2em !important;
+    font-weight: 500 !important;
+    color: #0000D2 !important;
+    text-align: left;
+}
+
+.accordion-button {
+    font-size: 0.7em !important;
+    font-weight: 600 !important;
+    color: #0000D2 !important;
 }
 
 /*CUSTOMER*/
