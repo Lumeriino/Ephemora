@@ -402,6 +402,7 @@ header{
 
 #best h1 {
     padding-bottom: 0.5em;
+    color: #0000D2;
 }
 
 #best img {
@@ -689,8 +690,8 @@ footer {
     padding: 0%;
     padding-top: 0%;
     flex-direction: column;
-    background-color: #004AAD;
-    color: #ffffff;
+    background-color: #0000D2;
+    color: #DBE4F5;
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
@@ -705,8 +706,18 @@ footer {
     
 }
 
+#footer_down a {
+    color: #DBE4F5;
+    text-decoration: none;
+}
+
+#footer_down {
+    padding: 0;
+}
+
 #footer_down > .menu_footer > ul > li:hover {
-    color:black;
+    /* color: #3838f9; */
+    text-decoration: underline;
     cursor: pointer;
 }
 
