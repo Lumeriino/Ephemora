@@ -683,6 +683,30 @@ header{
     cursor: pointer;
 } */
 
+/* rrss */
+#rrss {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#rrss div {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 2em;
+}
+
+#rrss i {
+    color: #0000D2;
+}
+
+#rrss i:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 /* FOOTER */
 footer {
     height: auto;
