@@ -495,75 +495,83 @@ header{
 
 /*CUSTOMER*/
 .customers-section {
-    margin: 100px 0; /* Espaciado arriba y abajo */
-    text-align: center; /* Centrar el texto */
+    margin: 100px 0; 
+    text-align: center; 
+}
+
+.customers h1 {
+    font-size: 2.5em;
+    color: #0000D2;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .customers {
-    display: flex; /* Usar flexbox para alinear imágenes */
-    justify-content: center; /* Centrar imágenes horizontalmente */
-    gap: 10px; /* Espaciado entre imágenes */
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias líneas */
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
+
+
 .customers img {
-    width: 10%; /* Ancho fijo para todas las imágenes */
-    height: 150px; /* Altura fija para todas las imágenes */
-    object-fit: cover; /* Mantener la proporción de aspecto y llenar el espacio */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid blue; /* Borde azul */
-    transition: all ease-in-out 0.5s; /* Transición suave al hacer hover */
+    width: 10%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    /*border: 2px solid blue;*/ 
+    transition: all ease-in-out 0.5s; 
+    filter: grayscale(100%);
+
 }
 
 .customers img:hover {
-    transform: scale(1.1); /* Aumentar ligeramente el tamaño al hacer hover */
+    transform: scale(1.1); 
 }
 
 
 /*SUBSRCIBE*/
-/* Contenedor principal de la suscripción */
 .subscribe {
     width: 70%;
     margin:auto; 
     display: flex;
     flex-direction: row;
-    align-items: fcenter; /* Alinear todo a la izquierda */
+    align-items: end;
+    padding: 3rem;
 }
 
-/* Título de suscripción */
 #subscribe_quest {
     width: 100%;
-    font-size: 2rem; /* Tamaño de fuente más grande */
+    font-size: 2.5rem; 
     font-weight: bold;
-    color: #004AAD; /* Color para que sea visible */
-    margin-bottom: 0.5rem; /* Espacio debajo del título */
+    color: #004AAD; 
     text-align: left;
     justify-content: flex-end;
 }
 
-/* Contenedor de email y botón */
 .subscribe_email {
     width: 100%;
     display: flex;
-    align-items: end; /* Centrar verticalmente */
-    gap: 0.5rem; /* Espacio entre email y botón */
+    align-items: end; 
+    gap: 0.5rem; 
+    margin-bottom: 2.2rem; 
 
 }
 
-/* Estilo para el campo de email */
 .subscribe_email input[type="email"] {
     width: 60%;
     padding-left: 0.5rem;
     height: 2rem;
     border: none;
-    border-bottom: 3px solid #004AAD; /* Línea inferior */
+    border-bottom: 3px solid #004AAD; 
     outline: none;
     font-size: 1rem;
 }
 
-/* Cambio de color en foco */
 .subscribe_email input[type="email"]:focus {
-    border-bottom: 3px solid #99beef; /* Color al enfocar */
+    border-bottom: 3px solid #99beef; 
 }
 
 .subscribe_email input[type="submit"] {
@@ -574,7 +582,7 @@ header{
     height: 2rem;
     border: none;
     margin-left: 0.5rem;
-    font-size: 1.2rem; /* Aumentar tamaño de la flecha si es necesario */
+    font-size: 1.2rem; 
     font-weight: bold;
 }
 
@@ -583,9 +591,6 @@ header{
     color: black;
     cursor: pointer;
 }
-
-
-
 
 /* FOOTER */
 footer {
@@ -598,7 +603,6 @@ footer {
     color: #ffffff;
     font-family: 'Wix Madefor Display', sans-serif;
 }
-
 
 #footer_down > .menu_footer > ul {
     display: flex;
@@ -616,15 +620,12 @@ footer {
     cursor: pointer;
 }
 
-/* Imagen en el footer */
 #footer_down > #logo > .best_img {
-    width: 100%; /* Ocupar todo el ancho */
-    height: auto; /* Mantener proporciones */
-    object-fit: cover; /* Ajustar imagen sin distorsión */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
     z-index: 0;
 }
-
-
 
 
 
