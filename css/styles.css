@@ -36,6 +36,7 @@ h3 {
 p {
     font-size: 1.2em !important;
     font-weight: 500 !important;
+    margin-bottom: 0.5rem !important;
 }
 
 i {
@@ -47,7 +48,7 @@ span:hover, #menuToggle:hover {
     transition: 0.3s;
     cursor: pointer;
 }
-
+/* 
 .subrayado::before {
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -68,13 +69,13 @@ span:hover, #menuToggle:hover {
     left: 0;
     inset: 0 0 0 0;
     background: #DBE4F5;
-    z-index: -1;
+    z-index: 0 !important;
     transition: transform .3s ease;
 }
 
 .subrayado {
     position: relative;
-}
+} */
 
 .subrayado2 {
     position: relative;
@@ -275,9 +276,11 @@ header{
 
 #description h1 {
     padding-top: 0 !important;
+    /* z-index: 2; */
 }
 #des {
     padding: 0 8em;
+    z-index: 1 !important;
 }
 
 #title {
@@ -340,7 +343,7 @@ header{
     font-weight: 400;
 }
 
-.button span {
+.button span, .button a {
     height: 3.5em;
     display: flex;
     align-items: center;
@@ -369,7 +372,7 @@ header{
     width: 68%;
 }
 
-#button i {
+#button i, .ruleta i {
     width: 100%;
     font-size: 1.5em;
     display: flex !important;
@@ -454,6 +457,70 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.ruleta {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+#ruleta1:target, #ruleta2:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.ruleta > div {
+    background-color: #DBE4F5 !important;
+    color: #0000D2;
+    width: 75%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 2em;
+}
+
+.ruleta i {
+    width: 90% !important;
+    
+}
+
+.ruleta a {
+    background-color: #0000D2 !important;
+    text-decoration: none !important;
+    color: #0000D2 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: #0000D2;
+}
+
+.ruleta a {
+    background: none !important;
+    width: 100%;
+    display: flex;
+}
+
+#ruleta2 > div >.button > a {
+    background-color: #0000D2 !important;
+    text-decoration: none;
+}
+
 
 /* ABOUT US */
 #about {
