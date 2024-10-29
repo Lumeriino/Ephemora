@@ -26,50 +26,58 @@ const menuToggle = document.getElementById("menuToggle");
 const closeMenu = document.getElementById("closeMenu");
 const menuLinks = document.querySelectorAll(".menuLink");
 
-// Función para alternar el menú
 function toggleMenu() {
-    menu.classList.toggle("active"); // Alternar la clase 'active' en el menú
+    menu.classList.toggle("active");
 }
 
-// Función para cerrar el menú
 function closeMenuHandler() {
-    menu.classList.remove("active"); // Quitar la clase 'active' para cerrar el menú
+    menu.classList.remove("active"); 
 }
 
-// Asignar el evento de clic al ícono del menú
 menuToggle.addEventListener("click", toggleMenu);
 
-// Asignar el evento de clic al ícono de cerrar menú
 closeMenu.addEventListener("click", closeMenuHandler);
 
-// Asignar evento a los enlaces del menú
 menuLinks.forEach(link => {
     link.addEventListener("click", closeMenuHandler);
 });
 
-// aplication
 const button = document.getElementById("button");
 const applicationElement = document.getElementById("application");
 const closeApp = document.getElementById("closeApp");
-// const menuLinks = document.querySelectorAll(".menuLink");
 
-// Función para alternar el menú
 function toggleApplication() {
-    button.classList.toggle("active"); // Alternar la clase 'active' en el menú
+    button.classList.toggle("active"); 
 }
 
-// Función para cerrar el menú
 function closeAppHandler() {
-    button.classList.remove("active"); // Quitar la clase 'active' para cerrar el menú
+    button.classList.remove("active"); 
 }
 
-// Asignar el evento de clic al ícono del menú
 applicationElement.addEventListener("click", toggleApplication);
 
-// Asignar el evento de clic al ícono de cerrar menú
 closeApp.addEventListener("click", closeAppHandler);
 
-// Asignar evento a los enlaces del menú
-// menuLinks.forEach(link => {
-//     link.addEventListener("click", closeAppHandler);
-// });
+// Suscribe
+// function enviar() {
+//   "use stict";
+
+//   document.getElementById("popup").style.display = "block";
+//   return false;
+// }
+
+// function closePopup () {
+//   "use strict";
+//   document.getElementById("popup").style.display = "none";
+//   document.getElementById("user").value = ""
+// }
+
+document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  document.getElementById("user").value = "";
+});
+
+// function closePopup() {
+//   document.getElementById("popupMessage").style.display = "none"
+// }

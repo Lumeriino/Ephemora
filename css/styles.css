@@ -601,50 +601,57 @@ header{
 
 /*SUBSRCIBE*/
 .subscribe {
-    width: 70%;
     margin:auto; 
     display: flex;
     flex-direction: row;
     align-items: end;
-    padding: 3rem;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 #subscribe_quest {
-    width: 100%;
+    width: 30%;
     font-size: 2.5rem; 
-    font-weight: bold;
-    color: #004AAD; 
+    /* font-weight: 800 !important; */
+    color: #0000D2; 
     text-align: left;
     justify-content: flex-end;
+    /* line-height: 0.5em !important; */
+}
+
+#subscribe_quest h3 {
+    line-height: 0.9em;
 }
 
 .subscribe_email {
-    width: 100%;
+    width: 70%;
     display: flex;
-    align-items: end; 
-    gap: 0.5rem; 
-    margin-bottom: 2.2rem; 
-
+    align-items: flex-end;
+    gap: 0.5rem;
+    justify-content: flex-end;
 }
 
 .subscribe_email input[type="email"] {
-    width: 60%;
+    width: 65%;
     padding-left: 0.5rem;
     height: 2rem;
     border: none;
-    border-bottom: 3px solid #004AAD; 
+    border-bottom: 3px solid #0000D2; 
     outline: none;
     font-size: 1rem;
 }
 
 .subscribe_email input[type="email"]:focus {
-    border-bottom: 3px solid #99beef; 
+    border-bottom: 3px solid #0000D2; 
 }
 
 .subscribe_email input[type="submit"] {
-    width: 15%;
-    
-    color: #0000D2;
+    width: 25%;
+    color: #DBE4F5;
+    background-color: #0000D2;
     border-radius: 10rem;
     height: 2rem;
     border: none;
@@ -653,11 +660,27 @@ header{
     font-weight: bold;
 }
 
-.subscribe_email input[type="submit"]:hover {
-    background-color: #99beef;
-    color: black;
-    cursor: pointer;
+#popupMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
 }
+#popupMessage p {
+    margin: 0;
+}
+/* 
+.subscribe_email input[type="submit"]:hover {
+    background-color: #0000D2;
+    color: #DBE4F5;
+    cursor: pointer;
+} */
 
 /* FOOTER */
 footer {

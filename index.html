@@ -202,7 +202,7 @@
         <div class="ruleta" id="ruleta1">
             <div>
                 <a href="#best">
-                    <i class="fa-solid fa-xmark" style="color: #0000D2;" id="closeApp"></i>   
+                    <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
                 </a>
                 
                 <h2>Pull the roulette wheel!</h2>
@@ -214,7 +214,7 @@
         <div class="ruleta" id="ruleta2">
             <div>
                 <a href="#best">
-                    <i class="fa-solid fa-xmark" style="color: #0000D2;" id="closeApp"></i>
+                    <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>
                 </a>
                 <h2>Your turn...</h2>
                 <h2>A HEART!!</h2>
@@ -364,19 +364,27 @@
         </div>
         
     </customers>
-    <subscribe>
-        <section class="subscribe">
+    <section id="subscribe">
+        <div class="subscribe">
             <div id="subscribe_quest">
-                <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
             </div>
-            <div class="subscribe_email">
-                <input type="email" id="user" placeholder="Email">
-                <input type="submit" value="→">
-                <!--- <i class="fa-solid fa-location-arrow"></i>-->
+            <form class="subscribe_email" id="subscribeForm" >
+                <input type="email" id="user" placeholder="Email" required>
+                <input type="submit" value="SEND" id="cerrar">
+            </form>
+        </div>
+        <!-- <div id="popupMessage">
+            <div>
+                <h2>
+                    THANKS FOR SUSCRIBING!
+                </h2>
+                <a href="#subscribe">
+                <i class="fa-solid fa-xmark" style="color: #0000D2;" onclick="closePopup()"></i>
+                </a>
             </div>
-        </section>
-        
-    </subscribe>
+        </div> -->
+    </section>
     
     <footer>
         <section id="footer_down">
