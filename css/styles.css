@@ -752,6 +752,133 @@ footer {
     z-index: 0;
 }
 
+ best sellers 
+#best {
+    width: 100%;
+}
+
+#best h1 {
+    padding-bottom: 0.5em;
+}
+
+#best img {
+    filter: grayscale(100);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.best_img {
+    position: relative;
+}
+
+#best_s {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em; 
+    justify-items: center;
+    padding-top: 2rem;
+    
+}
+
+.best_s {
+    width: 30%; 
+    flex-direction: row;
+    border: 1px solid black;
+
+      
+}
+
+.main-img {
+    display: block;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.best_img:hover .main-img {
+    display: none;
+}
+
+.best_img:hover .hover-img {
+    display: block;
+}
+
+
+
+
+
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+
+}
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+
+
+.mark > .circle2:first-child {
+    margin-bottom: 0.5em;
+    
+}
+
+.circle2 {
+    height: 55px;;
+    width: 55px;
+    background:#0000D2;
+    border-radius: 30px;
+}
+
+.circle2 i {
+    height: 100%;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best_img img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 0.5em;
+}
+
+.best_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5em;
+}
+
+
+@media screen and (max-width: 1000px) {
+   
+
+   
+
+   
+   
+   
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+}
 
 
 /* RESPONSIVE IPAD 
