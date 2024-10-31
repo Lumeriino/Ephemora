@@ -81,3 +81,12 @@ document.getElementById("subscribeForm").addEventListener("submit", function(eve
 // function closePopup() {
 //   document.getElementById("popupMessage").style.display = "none"
 // }
+
+
+//Customers
+var typed = new Typed('#number', {
+  strings: ['<h1>1.542</h1> <h2>SATISFIED CLIENTS</h2>'],
+
+  typeSpeed: 80,
+  loop: true,
+});
