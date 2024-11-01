@@ -158,6 +158,10 @@ headerproduct {
     height: 13vh !important;
 }
 
+headerdetail {
+    height: 13vh !important;
+}
+
 #back_img {
     width: 100%;
     position: absolute;
