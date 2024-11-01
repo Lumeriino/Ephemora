@@ -332,7 +332,7 @@ header{
 #caract_all {
     display: flex;
     justify-content: space-between;
-    padding: 3em 8em 0;
+    
     width: 100%;
 }
 
@@ -561,42 +561,116 @@ header{
     color: #0000D2 !important;
 }
 
-/*CUSTOMER*/
+/*CLIENTES */
+
 .customers-section {
     margin: 100px 0; 
     text-align: center; 
 }
 
-.customers h1 {
-    font-size: 2.5em;
+.container {
+    width: 80%;
+}
+
+.container .row {
+    width: 100%;
+}
+
+#number {
+    height: 50vh !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    justify-content: center;
+}
+
+.typed-cursor {
+    opacity: 0 !important;
+}
+
+.row div {
+    padding: 15px;
+}
+
+.container .row img {
+    width: 100%;
+    height: 250px;
+    aspect-ratio: cover;
+    object-fit: cover;
+    filter: grayscale(100);
+}
+
+#comments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExample {
+    width: 80%;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#carouselExample .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #DBE4F5;
+    color: #0000d2;
+    text-align: start;
+    border-radius: 50px;
+    height: 70vh;
+    border: none;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item {
+    padding: 1em;
+
+}
+
+.carousel-item .row div:first-child, .carousel-item .row div:last-child {
+    width: 50% !important;
+}
+
+.carousel-item .row div img {
+    border-radius: 50px !important;
+    height: 100%;
+    max-height: 58vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-item .row div:last-child div {
+    height: 100%;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.carousel-item .row div:last-child div div {
+    padding: 0 0 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.carousel-item i {
     color: #0000D2;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-weight:42em !important;
 }
 
-.customers {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px;
-    flex-wrap: wrap;
+.carousel-item .row div div p {
+    font-size: 2em;
 }
 
-
-
-.customers img {
-    width: 10%; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    /*border: 2px solid blue;*/ 
-    transition: all ease-in-out 0.5s; 
-    filter: grayscale(100%);
-
-}
-
-.customers img:hover {
-    transform: scale(1.1); 
+.carousel-item button {
+    color: #0000D2;
 }
 
 
@@ -752,6 +826,243 @@ footer {
     z-index: 0;
 }
 
+ /* best sellers */
+#best {
+    width: 100%;
+}
+
+#best h1 {
+    padding-bottom: 0.5em;
+}
+
+#best img {
+    filter: grayscale(100);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.best_img {
+    position: relative;
+}
+
+#best_s {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em; 
+    justify-items: center;
+    padding-top: 2rem;
+    
+}
+
+.best_s {
+    width: 30%; 
+    flex-direction: row;  
+}
+
+.main-img {
+    display: block;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.best_img:hover .main-img {
+    display: none;
+}
+
+.best_img:hover .hover-img {
+    display: block;
+}
+
+
+
+
+
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+
+}
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+
+
+.mark > .circle2:first-child {
+    margin-bottom: 0.5em;
+    
+}
+
+.circle2 {
+    height: 55px;;
+    width: 55px;
+    background:#0000D2;
+    border-radius: 30px;
+}
+
+.circle2 i {
+    height: 100%;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best_img img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 0.5em;
+}
+
+.best_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5em;
+}
+
+/*CART*/
+
+#addcart {
+    padding: 20px;
+}
+
+.addcart-content {
+    display: flex;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.main-img {
+    width: 40%; 
+    max-width: 100%;
+    filter: grayscale(100);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.addcart-text {
+    width: 60%; /* Ajusta según el espacio que quieras dedicar al texto */
+    text-align: justify;
+}
+
+.addcart-text p {
+    margin-bottom: 10px;
+}
+
+.addcart-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+
+
+.main-img {
+    display: block;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.addcart_img:hover .main-img {
+    display: none;
+}
+
+.addcart_img:hover .hover-img {
+    display: block;
+}
+
+
+
+
+
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+
+}
+.mark {
+    position: absolute;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+
+
+.mark > .circle2:first-child {
+    margin-bottom: 0.5em;
+    
+}
+
+.circle2 {
+    height: 55px;;
+    width: 55px;
+    background:#0000D2;
+    border-radius: 30px;
+}
+
+.circle2 i {
+    height: 100%;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addcart_img img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 0.5em;
+}
+
+.addcart_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5em;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+   
+
+   
+
+   
+   
+   
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+}
 
 
 /* RESPONSIVE IPAD 
