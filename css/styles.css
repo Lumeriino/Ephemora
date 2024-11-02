@@ -455,6 +455,18 @@ headerdetail {
     justify-content: center;
 }
 
+.fa-solid {
+    font-size: 2em;
+}
+
+/*.addcart-text p {
+    display: contents;
+}
+.addcart-item {
+    display: flex;
+}
+*/
+
 .best_img img {
     width: 100%;
     position: relative;
