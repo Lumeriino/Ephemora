@@ -46,7 +46,7 @@ img {
     object-fit: cover;
 }
 
-span:hover, #menuToggle:hover, #best .button a:hover, .subscribe_email input:last-child:hover {
+span:hover, #menuToggle:hover, #best .button a:hover, .subscribe_email input:last-child:hover, .top:hover {
     transform: scale(1.05);
     transition: 0.3s;
     cursor: pointer;
@@ -1464,3 +1464,17 @@ footer {
     }
 }
 */ 
+
+.top {
+    width: 2em !important; 
+    position: fixed !important; 
+    bottom: 1em !important; 
+    right: 1em !important; 
+    font-size: 1em !important;
+    cursor: pointer !important; 
+    z-index: 6;
+}
+
+.top i {
+    color: #3838f9 !important; 
+}

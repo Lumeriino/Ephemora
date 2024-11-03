@@ -193,3 +193,4 @@ var typed = new Typed('#number', {
   typeSpeed: 80,
   loop: true,
 });
+
