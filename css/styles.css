@@ -479,6 +479,72 @@ headerdetail {
     justify-content: space-between;
 }
 
+.mark a {
+    text-decoration: none !important;
+
+}
+
+.mark2 {
+    height: 100vh;
+    width: 33%;
+    background-color: #DBE4F5;
+    color: #0000D2;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    z-index: 5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.5s;   
+    padding: 2em; 
+    text-align: start;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+.mark2 > div > a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mark2 h2 {
+    width: 50%;
+}
+
+
+#wishlist > div, #buy > div {
+    width: 100% !important;
+}
+
+#tattoo {
+    display: flex;
+}
+
+#tattoo > img, #infobuy {
+    width: 50%;
+}
+
+
+#infobuy {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#wishlist:target, #buy:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 .ruleta {
     height: 100vh;
     width: 100%;
@@ -517,6 +583,7 @@ headerdetail {
     width: 90% !important;
     
 }
+
 
 .ruleta a {
     background-color: #0000D2 !important;
