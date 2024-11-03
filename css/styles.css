@@ -587,7 +587,7 @@ a {
 
 #buynow {
     height: 20%;
-    padding-top: 1.5em !important;
+    /* padding-top: 1.5em !important; */
 
     display: flex;
     flex-direction: column;
@@ -1083,14 +1083,14 @@ footer {
 }
 
 /*CART*/
-
+/* 
 #addcart {
     padding: 20px;
-}
+} */
 
 .addcart-content {
     display: flex;
-    gap: 20px; /* Espacio entre imagen y texto */
+    gap: 20px; 
 }
 
 .main-img, .main-img2 {
@@ -1114,7 +1114,7 @@ footer {
     display: flex;
     align-items: baseline;
     gap: 10px;
-}
+} 
 
 /* 
 
@@ -1185,8 +1185,8 @@ footer {
     position: relative;
     z-index: -1;
     padding-bottom: 0.5em;
-} */
-
+} */ */
+/* 
 .addcart_info {
     display: flex;
     justify-content: space-between;
