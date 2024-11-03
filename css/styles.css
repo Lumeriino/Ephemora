@@ -191,20 +191,16 @@ headerdetail {
     display: flex;
     width: 20%;
     height: 60%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-#cart, #menuToggle {
+#menuToggle {
     background-color: #0000D2;
     border-radius: 50px;
     height: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#cart {
-    width: 30%;
 }
 
 #menu_b {
@@ -1182,7 +1178,7 @@ footer {
     padding: 0 0.5em;
 }
 
-
+/* 
 
 
 @media screen and (max-width: 1000px) {
@@ -1261,14 +1257,14 @@ footer {
 
    
    
-   
+/*    
 }
 
 
 @media screen and (max-width: 550px) {
 
 
-}
+} */
 
 
 /* RESPONSIVE IPAD 
@@ -1453,4 +1449,4 @@ footer {
         font-size: 1em;  Reducir tamaño de p 
     }
 }
-*/
+*/ 
