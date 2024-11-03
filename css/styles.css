@@ -938,12 +938,11 @@ footer {
 }
 
 .circle2:hover {
-    background-color: #DBE4F5;
     cursor: pointer;
 }
 
 .circle2 i:hover {
-    color: #0000D2;
+    color: #3838f9;
 }
 
 .best_img img {
