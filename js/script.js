@@ -1,100 +1,82 @@
 // paginaControlEdad
-var ageInputScreen = document.createElement('div');
-ageInputScreen.style.position = 'fixed';
-ageInputScreen.style.top = '0';
-ageInputScreen.style.left = '0';
-ageInputScreen.style.width = '100%';
-ageInputScreen.style.height = '100%';
-ageInputScreen.style.backgroundColor = '#DBE4F5';
-ageInputScreen.style.color = '#0000D2';
-ageInputScreen.style.display = 'flex';
-ageInputScreen.style.flexDirection = 'column';
-ageInputScreen.style.justifyContent = 'center';
-ageInputScreen.style.alignItems = 'center';
-ageInputScreen.style.textAlign = 'center';
-ageInputScreen.style.zIndex = '10';
+// var ageInputScreen = document.createElement('div');
+// ageInputScreen.style.position = 'fixed';
+// ageInputScreen.style.top = '0';
+// ageInputScreen.style.left = '0';
+// ageInputScreen.style.width = '100%';
+// ageInputScreen.style.height = '100%';
+// ageInputScreen.style.backgroundColor = '#DBE4F5';
+// ageInputScreen.style.color = '#0000D2';
+// ageInputScreen.style.display = 'flex';
+// ageInputScreen.style.flexDirection = 'column';
+// ageInputScreen.style.justifyContent = 'center';
+// ageInputScreen.style.alignItems = 'center';
+// ageInputScreen.style.textAlign = 'center';
+// ageInputScreen.style.zIndex = '10';
 
 
-var agePromptText = document.createElement('h2');
-agePromptText.innerText = "Please enter your age:"
-agePromptText.style.paddingBottom = '0.5em'
+// var agePromptText = document.createElement('h2');
+// agePromptText.innerText = "Please enter your age:"
+// agePromptText.style.paddingBottom = '0.5em'
 
-var ageInput = document.createElement('input');
-ageInput.type = 'number';
-ageInput.style.padding = '10px';
-ageInput.style.marginBottom = '20px';
+// var ageInput = document.createElement('input');
+// ageInput.type = 'number';
+// ageInput.style.padding = '10px';
+// ageInput.style.marginBottom = '20px';
 
-ageInput.style.border = 'none';
-ageInput.style.borderRadius = '50px';
+// ageInput.style.border = 'none';
+// ageInput.style.borderRadius = '50px';
 
-var submitButton = document.createElement('button');
-submitButton.innerText = 'Submit';
-submitButton.style.padding = '10px 20px';
-submitButton.style.fontSize = '1em';
-submitButton.style.cursor = 'pointer';
-submitButton.style.backgroundColor = '#0000D2';
-submitButton.style.color = '#DBE4F5';
-submitButton.style.border = 'none';
-submitButton.style.borderRadius = '50px';
+// var submitButton = document.createElement('button');
+// submitButton.innerText = 'Submit';
+// submitButton.style.padding = '10px 20px';
+// submitButton.style.fontSize = '1em';
+// submitButton.style.cursor = 'pointer';
+// submitButton.style.backgroundColor = '#0000D2';
+// submitButton.style.color = '#DBE4F5';
+// submitButton.style.border = 'none';
+// submitButton.style.borderRadius = '50px';
 
-submitButton.onclick = function () {
-  var age = ageInput.value;
-  if (age < 16){
-    var lockScreen = document.createElement('div');
-    lockScreen.style.position = 'fixed';
-    lockScreen.style.top = '0';
-    lockScreen.style.left = '0';
-    lockScreen.style.width = '100%';
-    lockScreen.style.height = '100%';
-    lockScreen.style.backgroundColor = '#DBE4F5';
-    lockScreen.style.color = '#0000D2';
-    lockScreen.style.display = 'flex';
-    lockScreen.style.flexDirection = 'column';
-    lockScreen.style.justifyContent = 'center';
-    lockScreen.style.alignItems = 'center';
-    lockScreen.style.textAlign = 'center';
+// submitButton.onclick = function () {
+//   var age = ageInput.value;
+//   if (age < 16){
+//     var lockScreen = document.createElement('div');
+//     lockScreen.style.position = 'fixed';
+//     lockScreen.style.top = '0';
+//     lockScreen.style.left = '0';
+//     lockScreen.style.width = '100%';
+//     lockScreen.style.height = '100%';
+//     lockScreen.style.backgroundColor = '#DBE4F5';
+//     lockScreen.style.color = '#0000D2';
+//     lockScreen.style.display = 'flex';
+//     lockScreen.style.flexDirection = 'column';
+//     lockScreen.style.justifyContent = 'center';
+//     lockScreen.style.alignItems = 'center';
+//     lockScreen.style.textAlign = 'center';
 
-    var lockImage = document.createElement('img');
-    lockImage.src = 'media/img/maquinat-01.svg';
-    lockImage.style.height = '40%';
-    lockImage.style.paddingBottom = '0.5em';
+//     var lockImage = document.createElement('img');
+//     lockImage.src = 'media/img/maquinat-01.svg';
+//     lockImage.style.height = '40%';
+//     lockImage.style.paddingBottom = '0.5em';
 
-    var lockText = document.createElement('h1');
-    lockText.innerText = 'SORRY!'
+//     var lockText = document.createElement('h1');
+//     lockText.innerText = 'SORRY!'
 
-    lockScreen.appendChild(lockText);
-    lockScreen.appendChild(lockImage);
+//     lockScreen.appendChild(lockText);
+//     lockScreen.appendChild(lockImage);
 
-    document.body.innerHTML = '';
-    document.body.appendChild(lockScreen);
-  } else {
-    // alert('Welcome!');
-    ageInputScreen.remove();
-  }
-};
+//     document.body.innerHTML = '';
+//     document.body.appendChild(lockScreen);
+//   } else {
+//     ageInputScreen.remove();
+//   }
+// };
 
-ageInputScreen.appendChild(agePromptText);
-ageInputScreen.appendChild(ageInput);
-ageInputScreen.appendChild(submitButton);
+// ageInputScreen.appendChild(agePromptText);
+// ageInputScreen.appendChild(ageInput);
+// ageInputScreen.appendChild(submitButton);
 
-document.body.appendChild(ageInputScreen);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// document.body.appendChild(ageInputScreen);
 
 
 

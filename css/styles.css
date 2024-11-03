@@ -43,7 +43,7 @@ i {
     color: #DBE4F5;
 }
 
-span:hover, #menuToggle:hover {
+span:hover, #menuToggle:hover, #best .button a:hover, .subscribe_email input:last-child:hover {
     transform: scale(1.05);
     transition: 0.3s;
     cursor: pointer;
@@ -564,10 +564,9 @@ headerdetail {
     height: 100vh;
 }
 
-#FAQ h1 {
-    padding-bottom: 0.5em;
+#accordionFlushExample {
+    padding-top: 2em !important;
 }
-
 .accordion-body {
     font-size: 1.2em !important;
     font-weight: 500 !important;
@@ -900,10 +899,6 @@ footer {
     display: block;
 }
 
-
-
-
-
 .mark {
     position: absolute;
     display: flex;
@@ -911,6 +906,7 @@ footer {
     flex-direction: column;
 
 }
+
 .mark {
     position: absolute;
     display: flex;
@@ -939,6 +935,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.circle2:hover {
+    background-color: #DBE4F5;
+    cursor: pointer;
+}
+
+.circle2 i:hover {
+    color: #0000D2;
 }
 
 .best_img img {
