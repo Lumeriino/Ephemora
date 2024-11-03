@@ -522,16 +522,21 @@ a {
     width: 100% !important;
 }
 
-#tattoo {
+.tattoo {
     display: flex;
 }
 
-#tattoo > img, #infobuy {
-    width: 50%;
+.tattoo > img {
+    width: 40%;
 }
 
+.infobuytxt {
+    display: flex;
+    justify-content: space-between;
+}
 
-#infobuy {
+.infobuy {
+    width: 60%;
     padding-left: 1em;
     display: flex;
     flex-direction: column;
@@ -543,7 +548,11 @@ a {
     visibility: visible;
 }
 
-
+#buynow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 .ruleta {
     height: 100vh;

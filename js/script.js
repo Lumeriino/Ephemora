@@ -163,7 +163,21 @@ document.getElementById("subscribeForm").addEventListener("submit", function(eve
 // function closePopup() {
 //   document.getElementById("popupMessage").style.display = "none"
 // }
+// buy
+document.getElementById("cost").innerHTML = "0€";
 
+function totalCost() {
+    "use strict";
+
+    let numberCost = document.getElementById("numberCost").value;
+    const pricePerTicket = 7;
+
+    if (numberCost > 0) {
+        document.getElementById("cost").innerHTML = (numberCost * pricePerTicket) + "€";
+    } else {
+        document.getElementById("cost").innerHTML = "0€";
+    }
+}
 
 //Customers
 var typed = new Typed('#number', {
