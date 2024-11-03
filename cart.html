@@ -112,9 +112,9 @@
                             <a href="#wishlist" class="circle2">
                                 <i class="fa-solid fa-heart"></i>
                             </a>
-                            <div class="circle2">
+                            <a href="#buy" class="circle2">
                                 <i class="fa-solid fa-plus"></i>
-                            </div>
+                            </a>
                         </div>
                         <div class="mark2" id="wishlist">
                             <div>
@@ -138,6 +138,51 @@
                                 
                             </div>
                         </div>
+                        <div class="mark2" id="buy">
+
+                            <a href="#addcart">
+                                <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
+                            </a>
+                            <h2 class="subrayado3">Cart</h2>
+                            <p>1 Item(s)</p>
+                            <div>
+                                <div class="tattoo">
+                                    <img src="media/img/T9.jpg" alt="">
+                                    <div class="infobuy">
+                                        <div class="infobuytxt">
+                                            <p>Make Love</p>
+                                            <p>7€</p>   
+                                        </div>
+                                        <input type="number" id="numberCost" min="1" max="10" onchange="totalCost()" placeholder="Nº">
+                                    </div>
+                                </div>
+                                <div id="recomendation">  
+                                    <p><b>Other designs you may be interested in:</b></p>
+                                    <div id="best_s">
+                                        <div class="best_s">
+                                            <div class="best_img">
+                                                    <!-- Imagen original -->
+                                                <img src="media/img/T8.jpg" class="main-img">
+                                                    <!-- Imagen para mostrar en hover -->
+                                                <img src="media/img/T8_2.jpg" class="hover-img">
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="best_s">
+                                            <div class="best_img">
+                                                    <!-- Imagen original -->
+                                                <img src="media/img/T4.jpg" class="main-img">
+                                                    <!-- Imagen para mostrar en hover -->
+                                                <img src="media/img/T4_2.jpg" class="hover-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="buynow">
+                                    <p>Precio final: <span id="cost">0€</span></p>
+                                    <input type="submit" value="Buy now!" id="comprar" class="comprar">
+                                </div>
+                            </div>
                     </div>
                     
                     
@@ -273,5 +318,6 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+
 </body>
 </html>

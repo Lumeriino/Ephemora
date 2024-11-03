@@ -181,7 +181,7 @@ function totalCost() {
 
 document.getElementById("comprar").onclick = function () {
   // const total = document.getElementById.innerHTML;
-  alert("k you for your purchase!!");
+  alert("Thank you for your purchase!!");
   document.getElementById("cost").innerHTML = "0€";
   document.getElementById("numberCost").value = "";
 }

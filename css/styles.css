@@ -1179,12 +1179,12 @@ footer {
     justify-content: center;
 }
 
-.addcart_img img {
+/* .addcart_img img {
     width: 100%;
     position: relative;
     z-index: -1;
     padding-bottom: 0.5em;
-}
+} */
 
 .addcart_info {
     display: flex;
