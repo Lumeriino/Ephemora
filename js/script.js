@@ -186,6 +186,20 @@ document.getElementById("comprar").onclick = function () {
   document.getElementById("numberCost").value = "";
 }
 
+document.getElementById("comprar_prod").onclick = function () {
+  // const total = document.getElementById.innerHTML;
+  alert("Thank you for your purchase!!");
+  document.getElementById("cost").innerHTML = "0€";
+  document.getElementById("numberCost").value = "";
+}
+
+document.getElementById("comprar_cart").onclick = function () {
+  // const total = document.getElementById.innerHTML;
+  alert("Thank you for your purchase!!");
+  document.getElementById("cost").innerHTML = "0€";
+  document.getElementById("numberCost").value = "";
+}
+
 //Customers
 var typed = new Typed('#number', {
   strings: ['<h1>1.542</h1> <h2>SATISFIED CLIENTS</h2>'],
