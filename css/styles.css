@@ -42,6 +42,9 @@ p {
 i {
     color: #DBE4F5;
 }
+img {
+    object-fit: cover;
+}
 
 span:hover, #menuToggle:hover, #best .button a:hover, .subscribe_email input:last-child:hover {
     transform: scale(1.05);
@@ -500,6 +503,11 @@ headerdetail {
     flex-direction: column;
 }
 
+.mark2 img {
+    filter: grayscale(100);
+
+}
+
 a {
     text-decoration: none !important;
 
@@ -509,9 +517,14 @@ a {
     height: 100%;
 }
 
-.mark2 > a > i {
+.mark2  a  i {
     display: flex;
     justify-content: flex-end;
+}
+
+.infobuy > a > i {
+    display: flex;
+    justify-content: center !important;
 }
 
 .mark2 h2 {
@@ -522,6 +535,7 @@ a {
 #wishlist > div, #buy > div {
     width: 100% !important;
 }
+
 
 .tattoo {
     height: 33%;
