@@ -1112,43 +1112,20 @@ footer {
 .markcart .circle2{
     margin: 0.25em;
 }
-/* .addcart-text {
-    width: 60%; 
-    text-align: justify;
-}
 
-.addcart-text p {
-    margin-bottom: 10px;
-}
-
-.addcart-item {
+#addcart .best_img {
+    width: 60%;
     display: flex;
-    align-items: baseline;
-    gap: 10px;
-}  */
-
-/* 
-
-.main-img {
-    display: block;
+    justify-content: center;
 }
 
-.hover-img {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+#addcart .best_img img {
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+    height: auto; 
+    aspect-ratio:1/1;
 }
 
-.addcart_img:hover .main-img {
-    display: none;
-}
-
-.addcart_img:hover .hover-img {
-    display: block;
-} */
 
 
 
