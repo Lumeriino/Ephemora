@@ -188,12 +188,12 @@ document.getElementById("comprar").onclick = function () {
   document.getElementById("numberCost").value = "";
 }
 
-document.getElementById("comprar_prod").onclick = function () {
-  // const total = document.getElementById.innerHTML;
-  alert("Thank you for your purchase!!");
+document.getElementById("comprar_prod").onclick = function() {
+  // const total = document.getElementById("total").innerHTML;
+  alert("Thanks!");
   document.getElementById("cost").innerHTML = "0€";
   document.getElementById("numberCost").value = "";
-}
+};
 
 document.getElementById("comprar_cart").onclick = function () {
   // const total = document.getElementById.innerHTML;
