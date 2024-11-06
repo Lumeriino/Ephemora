@@ -392,7 +392,20 @@ headerdetail {
     object-fit: contain;
     padding: 1em 0;
 }
+#ruleta1 > div > h2 {
+    padding-bottom: 1.25em;
+}
 
+#ruleta1 > div > div > a {
+    height: 800px;
+    width: 40em;
+}
+
+.ruleta img{
+    filter: grayscale(0) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 .ruleta img:hover {
     transform: scale(1.2);  
 }
