@@ -406,9 +406,7 @@ headerdetail {
     padding: 0 !important;
     margin: 0 !important;
 }
-.ruleta img:hover {
-    transform: scale(1.2);  
-}
+
 #button p {
     background-color: #ffffff;
     padding: 0.2em;
@@ -434,7 +432,8 @@ headerdetail {
     }
 }
 .ruleta img.girando {
-    animation: girarContinuo 2s linear infinite; 
+    animation: girarContinuo 3s linear 2;
+    
 }
 
 .ruleta div {

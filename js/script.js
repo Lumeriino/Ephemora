@@ -188,7 +188,7 @@ document.getElementById("comprar").onclick = function () {
   document.getElementById("numberCost").value = "";
 }
 
-document.getElementById("comprar_prod").onclick = function() {
+document.getElementById("comprar_prod").onclick = function () {
   // const total = document.getElementById("total").innerHTML;
   alert("Thanks!");
   document.getElementById("cost").innerHTML = "0€";
@@ -227,11 +227,16 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
+const ruletaImg = document.querySelector('#ruleta2 img');
 
-const ruletaImg = document.querySelector('#ruleta1 img');
-
-// Añade un evento de clic para iniciar la rotación
 ruletaImg.addEventListener('click', () => {
-    // Añade la clase que activa la animación de rotación
+ 
     ruletaImg.classList.add('girando');
+
+    const tiempoTotal = 3 * 2 * 1000; 
+
+    setTimeout(() => {
+        ruletaImg.classList.remove('girando');
+    }, 5 );
 });
+
