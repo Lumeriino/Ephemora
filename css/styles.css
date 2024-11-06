@@ -1153,7 +1153,6 @@ footer {
 }
 
 
-
 .mark > .circle2:first-child {
     margin-bottom: 0.5em;
     
@@ -1222,12 +1221,22 @@ footer {
     padding: 0.5em;
 }
 
+.markcart {
+    display: flex;
+    flex-direction: row;
+
+}
 .markcart .circle2{
     margin: 0.25em;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+   
 }
 
 #addcart .best_img {
-    width: 60%;
+    width: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -1235,13 +1244,9 @@ footer {
 #addcart .best_img img {
     width: 100%;
     object-fit: cover;
-    height: auto; 
+    height: 80%; 
     aspect-ratio:1/1;
 }
-
-
-
-
 
 
 .mark {
@@ -1258,6 +1263,7 @@ footer {
     flex-direction: column;
     font-size: 0.8em;
 }
+
 
 
 
@@ -2076,4 +2082,408 @@ footer {
     }
 }
 */ 
+
+@media screen and (max-width: 550px) {
+/*PAGINA PRODUCT*/
+    section {
+        padding: 0;
+        text-align: center;
+        font-size: xx-small;
+    }
+
+    #menu {
+        height: 10vh;        
+        padding: 0.5em;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2em;
+    }
+
+    #menu img, #menu > a {
+        height: 80%; 
+    }
+
+    #menu > div { 
+        width: 15%;
+        height: 70%;
+    }
+
+    #menuToggle {
+        background-color: #0000D2;
+        border-radius: 20px;
+        height: 70%;
+        padding: 0.2em 0.5em;
+        font-size: small;
+    }
+
+    #menu_b {
+        width: 80%;
+    }
+
+    #menu ul {
+        width: 50%;
+        height: 100vh;
+        right: -100vw;
+        padding: 1.5em;
+        font-size: 0.9em; 
+        transition: right 0.3s ease; 
+    }
+
+    #menu.active ul {
+        right: 0;
+        font-size: x-small;
+    }
+
+    
+
+    #menu ul li:first-child {
+        padding-bottom: 2em;
+    }
+
+    #menu ul li:first-child i {
+        font-size: 1.5em; 
+    }
+
+    #menu ul li a {
+        font-size: 0.9em; 
+    }
+
+    #logo {
+        padding: 1.5em 0 0 0; 
+    }
+
+    .bestprod {
+        display: flex;
+        justify-content: flex-end !important;
+        padding: 1em 0;
+        padding-right: 2rem;
+    }
+
+    #best2 h1 { 
+        display: contents;
+        font-size: 10px;;
+    }
+
+    .best2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #best {
+        width: 100%;
+        padding: 1em; 
+    }
+
+    #best h1 {
+        font-size: 1.5em; 
+        padding-bottom: 0.3em;
+        text-align: center; 
+    }
+
+    #best img {
+        filter: grayscale(100);
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    #best_s {
+        display: flex;
+        justify-content: center; 
+        gap: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mark {
+        position: absolute;
+        padding: 0.3em;
+        flex-direction: row; 
+        top: 0.3em; 
+        left: 0.3em;
+    }
+
+    .circle2 {
+        height: 45px; 
+        width: 45px;
+        border-radius: 25px;
+        margin-right: 0.5em;
+    }
+
+    .circle2 i {
+        font-size: 1.5em; 
+    }
+
+    .fa-solid {
+        font-size: 1.8em; 
+    }
+
+    .best_img img {
+        width: 100%;
+        padding-bottom: 0.3em;
+    }
+
+    .best_info {
+        font-size: small;
+    }
+
+    .best_info p {
+        font-size: 1em; 
+    }
+
+    .mark2 {
+        width: 100vw; 
+        height: 70vh; 
+        padding: 1em;
+        right: 0;
+        top: 10vh; 
+        overflow-y: auto; 
+    }
+
+    .mark2 h2 {
+        font-size: 1.5em; 
+        width: 80%;
+    }
+
+    .mark2 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .infobuy > a > i {
+        justify-content: center !important;
+    }
+
+    .infobuy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    .mark2 > div {
+        height: auto;
+    }
+
+    .mark2  a i {
+        font-size: 1.5em;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    #rrss {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: inherit;
+        font-size: small;
+    }
+    
+    
+
+    #footer_down > .menu_footer > ul {
+        justify-content: center;
+        color: white;
+        padding-left: 0 !important;
+        display: contents;
+    }
+
+    #footer_down > .menu_footer > ul > li {
+        padding: 0%;
+    }
+    #footer_down > .menu_footer {
+        padding-top: 2rem;
+    }
+
+   footer { 
+       text-align: center;
+       font-size: 1em; 
+   }
+
+   #footer_down > #logo > .best_img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    z-index: 0;
+
+    /*PAGINA PRODUCT*/
+}
+
+   
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        height: 60vh; 
+    }
+    
+    #menu {
+        height: 10vh;        
+        padding: 0.5em;
+        justify-content: space-between;
+    }
+
+    #menu img, #menu > a {
+        height: 80%; 
+    }
+
+    #menu > div { 
+        width: 15%;
+        height: 70%;
+    }
+
+    #menuToggle {
+        background-color: #0000D2;
+        border-radius: 50px;
+        height: 100%;
+        padding: 0.2em 0.5em;
+    }
+
+    #menu_b {
+        width: 80%;
+    }
+
+    #menu ul {
+        width: 50%;
+        height: 100vh;
+        right: -100vw;
+        padding: 1.5em;
+        font-size: 0.9em; 
+        transition: right 0.3s ease; 
+    }
+
+    #menu.active ul {
+        right: 0;
+    }
+
+    #menu ul li {
+        padding: 0.5em; 
+    }
+
+    #menu ul li:first-child {
+        padding-bottom: 2em;
+    }
+
+    #menu ul li:first-child i {
+        font-size: 1.5em; 
+    }
+
+    #menu ul li a {
+        font-size: 0.9em; 
+    }
+
+    #logo {
+        padding: 1.5em 0 0 0; 
+    }
+
+    #best {
+        width: 100%;
+        padding: 1em; 
+    }
+
+    #best h1 {
+        font-size: 1.5em; 
+        padding-bottom: 0.3em;
+        text-align: center; 
+    }
+
+    #best img {
+        filter: grayscale(100);
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    #best_s {
+        display: flex;
+        justify-content: center; 
+        gap: 1em;
+    }
+
+    #best2 h1 {
+        font-size: small;
+    }
+    .mark {
+        position: absolute;
+        padding: 0.3em;
+        flex-direction: row; 
+        top: 0.3em; 
+        left: 0.3em;
+    }
+
+    .circle2 {
+        height: 45px; 
+        width: 45px;
+        border-radius: 25px;
+        margin-right: 0.5em;
+    }
+
+    .circle2 i {
+        font-size: 1.5em; 
+    }
+
+    .fa-solid {
+        font-size: 1.8em; 
+    }
+
+    .best_img img {
+        width: 100%;
+        padding-bottom: 0.3em;
+    }
+
+    .best_info {
+        font-size: small;
+    }
+
+    .best_info p {
+        font-size: 1em; 
+    }
+
+    .mark2 {
+        width: 100vw; 
+        height: 70vh; 
+        padding: 1em;
+        right: 0;
+        top: 10vh; 
+        overflow-y: auto; 
+    }
+
+    .mark2 h2 {
+        font-size: 1.5em; 
+        width: 80%;
+    }
+
+    .mark2 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .infobuy > a > i {
+        justify-content: center !important;
+    }
+
+    .infobuy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    .mark2 > div {
+        height: auto;
+    }
+
+    .mark2  a i {
+        font-size: 1.5em;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+
+}
 
