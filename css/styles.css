@@ -7,7 +7,7 @@
     font-weight: 700;
 }
 
-html {
+/* html {
     block-size: 100%;
     inline-size: 100%;
 }
@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
     display: grid;
     place-content: center;
-}
+} */
 
 section {
     padding: 1.5em 4em;
@@ -1047,6 +1047,7 @@ footer {
     display: flex;
     justify-content: center;
     color: white;
+    padding-left: 0 !important;
 }
 
 #footer_down > .menu_footer > ul > li {

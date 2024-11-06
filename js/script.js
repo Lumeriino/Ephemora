@@ -89,18 +89,18 @@ window.addEventListener('scroll', () => {
 });
 
 // FAQ
-const icons = document.querySelectorAll('.fa-plus');
+// const icons = document.querySelectorAll('.fa-plus');
 
-icons.forEach(icon => {
-  icon.addEventListener('click', (event) => {
+// icons.forEach(icon => {
+//   icon.addEventListener('click', (event) => {
 
-    const respuesta = icon.parentElement.nextElementSibling;
+//     const respuesta = icon.parentElement.nextElementSibling;
 
-    icon.classList.toggle('icon');
+//     icon.classList.toggle('icon');
 
-    respuesta.style.display = respuesta.style.display === 'none' || respuesta.style.display === '' ? 'block' : 'none';
-  });
-});
+//     respuesta.style.display = respuesta.style.display === 'none' || respuesta.style.display === '' ? 'block' : 'none';
+//   });
+// });
 
 
 
@@ -143,28 +143,14 @@ applicationElement.addEventListener("click", toggleApplication);
 closeApp.addEventListener("click", closeAppHandler);
 
 // Suscribe
-// function enviar() {
-//   "use stict";
-
-//   document.getElementById("popup").style.display = "block";
-//   return false;
-// }
-
-// function closePopup () {
-//   "use strict";
-//   document.getElementById("popup").style.display = "none";
-//   document.getElementById("user").value = ""
-// }
-
 document.getElementById("subscribeForm").addEventListener("submit", function(event) {
   event.preventDefault();
   
   document.getElementById("user").value = "";
+  alert("Thanks for suscribing!");
 });
 
-// function closePopup() {
-//   document.getElementById("popupMessage").style.display = "none"
-// }
+
 // buy
 document.getElementById("cost").innerHTML = "0€";
 
@@ -183,24 +169,29 @@ function totalCost() {
 
 document.getElementById("comprar").onclick = function () {
   // const total = document.getElementById.innerHTML;
+  console.log("primerboton")
   alert("Thank you for your purchase!!");
   document.getElementById("cost").innerHTML = "0€";
   document.getElementById("numberCost").value = "";
 }
 
-document.getElementById("comprar_prod").onclick = function () {
-  // const total = document.getElementById("total").innerHTML;
-  alert("Thanks!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-};
+// document.getElementById("comprarprod").onclick = function () {
+//   // const total = document.getElementById("total").innerHTML;
+//   console.log("segundoboton")
 
-document.getElementById("comprar_cart").onclick = function () {
-  // const total = document.getElementById.innerHTML;
-  alert("Thank you for your purchase!!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-}
+//   alert("Thanks!");
+//   document.getElementById("cost").innerHTML = "0€";
+//   document.getElementById("numberCost").value = "";
+// };
+
+// document.getElementById("comprar_cart").onclick = function () {
+//   // const total = document.getElementById.innerHTML;
+//   console.log("tercerboton")
+
+//   alert("Thank you for your purchase!!");
+//   document.getElementById("cost").innerHTML = "0€";
+//   document.getElementById("numberCost").value = "";
+// }
 
 //Customers
 var typed = new Typed('#number', {
@@ -211,21 +202,21 @@ var typed = new Typed('#number', {
 });
 
 //CART
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
 
 const ruletaImg = document.querySelector('#ruleta2 img');
 

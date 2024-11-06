@@ -1,651 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ephemora</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ephemora</title>
 
-    <meta name="author" content="Agustina Estevez y Lucía Merino">
-    <meta name="description" content="product">
+        <meta name="author" content="Agustina Estevez y Lucía Merino">
+        <meta name="description" content="product">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">     
 
-    <script src="https://kit.fontawesome.com/3109f9bb08.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script src="https://kit.fontawesome.com/3109f9bb08.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-    <header id="home_page">
-        <div>
-            <img src="media/img/homepage.jpeg" id="back_img">
-        </div>
-        <nav id="menu">
-            <a href="#home_page">
-                <img src="media/img/Logo-03.png">
-            </a>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="home_page">
             <div>
-                
-                <div id="menu_b">
-                    <div id="menuToggle">
-                        <span>
-                            <h3>MENU</h3>
-                        </span>
+                <img src="media/img/homepage.jpeg" id="back_img">
+            </div>
+            <nav id="menu">
+                <a href="#home_page">
+                    <img src="media/img/Logo-03.png">
+                </a>
+                <div>
+                    <div id="menu_b">
+                        <div id="menuToggle">
+                            <span>
+                                <h3>MENU</h3>
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-xmark" style="color: #DBE4F5;" id="closeMenu"></i>
+                            </li>
+                            <li>
+                                <a href="#description" class="menuLink subrayado2">
+                                    <h2>HOW IT WORKS</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#best" class="menuLink subrayado2">
+                                    <h2>BEST SELLERS</h2>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link active menuLink subrayado2">
+                                    <h2>OUR PRODUCTS</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about" class="menuLink subrayado2">
+                                    <h2>ABOUT US</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="menuLink subrayado2">
+                                    <h2>FAQ'S</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clients" class="menuLink subrayado2">
+                                    <h2>OUR COMMUNITY</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="logo">
+                <img src="media/img/Logo-04-03.png">
+            </div>
+        </header>
+
+        <section id="description">
+            <img src="media/img/line-03.png">
+            <div id="des">
+                <div id="title">
+                    <h1 class="subrayado">ZERO COMPROMISE</h1>
+                    <h1>TEMPORARY</h1>
+                    <h1>TATTOOS</h1>
+                </div>
+                <p>Our temporary tattoos combine <b>art and sustainability,</b> offering realistic designs created by tattoo artists. Made with <b>natural and cruelty-free ingredients,</b> the vegan ink fades evenly in 15 days. With <b>easy application and removal</b> using an exfoliating gel, we provide a free and responsible form of personal expression.</p>
+            </div>
+            <div id="caract_all">
+                <div id="caract1" class="caract">
+                    <div class="estrella">
+                        <div>
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <img src="media/img/estrella1-01.svg" class="rotatingImage">
+                    </div>
+                    <p>The ink of our temporary tattoos comes from <b>vegetable and vegan</b> origin.</p>
+                </div>
+                <div id="caract2" class="caract">
+                    <div class="estrella">
+                        <div>
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <img src="media/img/estrella1-01.svg" class="rotatingImage">
+                    </div>
+                    <p>It is also <b>animal-friendly,</b> as it is not tested on animals. 
+                    </p>
+                </div>
+                <div id="caract3" class="caract">
+                    <div class="estrella">
+                        <div>
+                            <i class="fa-solid fa-recycle"></i>
+                        </div>
+                        <img src="media/img/estrella1-01.svg" class="rotatingImage">
+                    </div>
+                    <p>All our materials are <b>biodegradable & environmentally friendly.</b></p>
+                </div>
+                <div id="caract4" class="caract">
+                    <div class="estrella">
+                        <div>
+                            <i class="fa-solid fa-bacterium"></i>
+                        </div>
+                        <img src="media/img/estrella1-01.svg" class="rotatingImage">
+                    </div>
+                    <p>Both the scrub and the ink are <b>hypoallergenic.</b></p>
+                </div>
+            </div>
+            <div class="button" id="button">
+                <span id="application">
+                    <h2>How is it applied?</h2>
+                </span>
+                <div>
+                    <i class="fa-solid fa-xmark" style="color: #0000D2;" id="closeApp"></i>
+                    <h2 class="subrayado3">How is it applied?</h2>
+                    <img src="media\img\pasos.png" alt="">
+                    <p>Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo evenly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="best">
+            <h1>BEST SELLERS</h1>
+            <div id="best_s">
+                <div class="best_s">
+                    <div class="best_img">
+                        <div class="mark">
+                            <a href="#wishlist" class="circle2">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                            <a href="#buy" class="circle2">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <img src="media/img/T9.jpg" class="main-img">
+                        <a href="cart.html" ><img src="media/img/T9_2.jpg" class="hover-img"></a>
                     </div>
                     
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-xmark" style="color: #DBE4F5;" id="closeMenu"></i>
-                        </li>
-                        <li>
-                            <a href="#description" class="menuLink subrayado2">
-                                <h2>HOW IT WORKS</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#best" class="menuLink subrayado2">
-                                <h2>BEST SELLERS</h2>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="product.html" class="nav-link active menuLink subrayado2">
-                                <h2>OUR PRODUCTS</h2>
-                             </a>
-                        </li>
-
-                        <li>
-                            <a href="#about" class="menuLink subrayado2">
-                                <h2>ABOUT US</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#faq" class="menuLink subrayado2">
-                                <h2>FAQ'S</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#clients" class="menuLink subrayado2">
-                                <h2>OUR COMMUNITY</h2>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div id="logo">
-            <img src="media/img/Logo-04-03.png">
-        </div>
-    </header>
-    <section id="description">
-        <img src="media/img/line-03.png">
-        <div id="des">
-            <div id="title">
-                <h1 class="subrayado">ZERO COMPROMISE</h1>
-                <h1>TEMPORARY</h1>
-                <h1>TATTOOS</h1>
-            </div>
-            <p>Our temporary tattoos combine <b>art and sustainability,</b> offering realistic designs created by tattoo artists. Made with <b>natural and cruelty-free ingredients,</b> the vegan ink fades evenly in 15 days. With <b>easy application and removal</b> using an exfoliating gel, we provide a free and responsible form of personal expression.</p>
-        </div>
-        <div id="caract_all">
-            <div id="caract1" class="caract">
-                <div class="estrella">
-                    <div>
-                        <i class="fa-solid fa-leaf"></i>
+                    <div class="best_info">
+                        <p>Make Love</p>
+                        <p>7€</p>
                     </div>
-                    <img src="media/img/estrella1-01.svg" class="rotatingImage">
-                </div>
-                <p>The ink of our temporary tattoos comes from <b>vegetable and vegan</b> origin.</p>
-            </div>
-            <div id="caract2" class="caract">
-                <div class="estrella">
-                    <div>
-                        <i class="fa-solid fa-paw"></i>
+                    <div class="mark2" id="wishlist">
+                        <div>
+                            <a href="#best">
+                                <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
+                            </a>
+                            <h2 class="subrayado3">Wishlist</h2>
+                            <p>1 Item(s)</p>
+                            <div class="tattoo">
+                                <img src="media/img/T9.jpg" alt="">
+                                <div class="infobuy">
+                                    <div class="infobuytxt">
+                                        <p>Make Love</p>
+                                        <p>7€</p>   
+                                    </div>
+                                    <a href="#buy" class="circle2">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="media/img/estrella1-01.svg" class="rotatingImage">
-                </div>
-                <p>It is also <b>animal-friendly,</b> as it is not tested on animals. 
-                </p>
-            </div>
-            <div id="caract3" class="caract">
-                <div class="estrella">
-                    <div>
-                        <i class="fa-solid fa-recycle"></i>
-                    </div>
-                    <img src="media/img/estrella1-01.svg" class="rotatingImage">
-                </div>
-                <p>All our materials are <b>biodegradable & environmentally friendly.</b></p>
-            </div>
-            <div id="caract4" class="caract">
-                <div class="estrella">
-                    <div>
-                        <i class="fa-solid fa-bacterium"></i>
-                    </div>
-                    <img src="media/img/estrella1-01.svg" class="rotatingImage">
-                </div>
-                <p>Both the scrub and the ink are <b>hypoallergenic.</b></p>
-            </div>
-        </div>
-        <div class="button" id="button">
-            <span id="application">
-                <h2>How is it applied?</h2>
-            </span>
-            <div>
-                <i class="fa-solid fa-xmark" style="color: #0000D2;" id="closeApp"></i>
-                <h2 class="subrayado3">How is it applied?</h2>
-                <img src="media\img\pasos.png" alt="">
-                <p>Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo evenly.</p>
-            </div>
-        </div>
-    </section>
-    <section id="best">
-        <h1>BEST SELLERS</h1>
-        <div id="best_s">
-            <div class="best_s">
-                <div class="best_img">
-                    <div class="mark">
-                        <a href="#wishlist" class="circle2">
-                            <i class="fa-solid fa-heart"></i>
-                        </a>
-                        <a href="#buy" class="circle2">
-                            <i class="fa-solid fa-plus"></i>
-                        </a>
-                    </div>
-                    <img src="media/img/T9.jpg" class="main-img">
-                    <a href="cart.html" ><img src="media/img/T9_2.jpg" class="hover-img"></a>
-                </div>
-                
-                <div class="best_info">
-                    <p>Make Love</p>
-                    <p>7€</p>
-                </div>
-                <div class="mark2" id="wishlist">
-                    <div>
+                    <div class="mark2" id="buy">
                         <a href="#best">
                             <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
                         </a>
-                        <h2 class="subrayado3">Wishlist</h2>
+                        <h2 class="subrayado3">Cart</h2>
                         <p>1 Item(s)</p>
-                        <div class="tattoo">
-                            <img src="media/img/T9.jpg" alt="">
-                            <div class="infobuy">
-                                <div class="infobuytxt">
-                                    <p>Make Love</p>
-                                    <p>7€</p>   
+                        <div>
+                            <div class="tattoo">
+                                <img src="media/img/T9.jpg" alt="">
+                                <div class="infobuy">
+                                    <div class="infobuytxt">
+                                        <p>Make Love</p>
+                                        <p>7€</p>   
+                                    </div>
+                                    <input type="number" id="numberCost" min="1" max="10" onchange="totalCost()" placeholder="Nº">
                                 </div>
-                                <a href="#buy" class="circle2">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
+                            </div>
+                            <div id="recomendation">  
+                                <p><b>Other designs you may be interested in:</b></p>
+                                <div id="best_s">
+                                    <div class="best_s">
+                                        <div class="best_img">
+                                            <img src="media/img/T8.jpg" class="main-img2">
+                                        </div>
+                                    </div>
+                                    <div class="best_s">
+                                        <div class="best_img">
+                                            <img src="media/img/T4.jpg" class="main-img2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="buynow">
+                                <p>Precio final: <span id="cost">0€</span></p>
+                                <input type="submit" value="Buy now!" id="comprar" class="comprar">
                             </div>
                         </div>
-                        
                     </div>
                 </div>
-                <div class="mark2" id="buy">
-
+                <div class="best_s">
+                    <div class="best_img">
+                        <div class="mark">
+                            <div class="circle2">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="circle2">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img src="media/img/T3.jpg" class="main-img">
+                        <img src="media/img/T3_2.jpg" class="hover-img"></a>
+                    </div>
+                    <div class="best_info">
+                        <p>Tiny Dancers</p>
+                        <p>12€</p>
+                    </div>
+                </div>
+                <div class="best_s">
+                    <div class="best_img">
+                        <div class="mark">
+                            <div class="circle2">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="circle2">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <img src="media/img/T1.jpg" class="main-img">
+                        <img src="media/img/T1_1.jpg" class="hover-img"></a>
+                    </div>
+                    <div class="best_info">
+                        <p>Moiety</p>
+                        <p>12€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#ruleta1">
+                    <h2>Don't know what to tattoo?</h2>
+                </a>
+            </div>
+            <div class="ruleta" id="ruleta1">
+                <div>
                     <a href="#best">
                         <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
                     </a>
-                    <h2 class="subrayado3">Cart</h2>
-                    <p>1 Item(s)</p>
+                    
+                    <h2>Pull the roulette wheel!</h2>
                     <div>
-                        <div class="tattoo">
-                            <img src="media/img/T9.jpg" alt="">
-                            <div class="infobuy">
-                                <div class="infobuytxt">
-                                    <p>Make Love</p>
-                                    <p>7€</p>   
-                                </div>
-                                <input type="number" id="numberCost" min="1" max="10" onchange="totalCost()" placeholder="Nº">
-                            </div>
-                        </div>
-                        <div id="recomendation">  
-                            <p><b>Other designs you may be interested in:</b></p>
-                            <div id="best_s">
-                                <div class="best_s">
-                                    <div class="best_img">
-                                            <!-- Imagen original -->
-                                        <img src="media/img/T8.jpg" class="main-img2">
-                                    </div>
-                                </div>
-                                    
-                                <div class="best_s">
-                                    <div class="best_img">
-                                            <!-- Imagen original -->
-                                        <img src="media/img/T4.jpg" class="main-img2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="buynow">
-                            <p>Precio final: <span id="cost">0€</span></p>
-                            <input type="submit" value="Buy now!" id="comprar" class="comprar">
-                        </div>
+                        <a href="#ruleta2">
+                            <img src="media/img/ruletaazul.png" alt="" class="girando">
+                        </a>                    
                     </div>
+
                 </div>
             </div>
-            <div class="best_s">
-                <div class="best_img">
-                    <div class="mark">
-                        <div class="circle2">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="circle2">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                    <img src="media/img/T3.jpg" class="main-img">
-                    <img src="media/img/T3_2.jpg" class="hover-img"></a>
-                </div>
-                
-                <div class="best_info">
-                    <p>Tiny Dancers</p>
-                    <p>12€</p>
-                </div>
-            </div>
-            <div class="best_s">
-                <div class="best_img">
-                    <div class="mark">
-                        <div class="circle2">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <div class="circle2">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                    <img src="media/img/T1.jpg" class="main-img">
-                    <img src="media/img/T1_1.jpg" class="hover-img"></a>
-                </div>
-                
-                <div class="best_info">
-                    <p>Moiety</p>
-                    <p>12€</p>
-                </div>
-            </div>
-        </div>
-        <div class="button">
-            <a href="#ruleta1">
-                <h2>Don't know what to tattoo?</h2>
-            </a>
-        </div>
-        <div class="ruleta" id="ruleta1">
-            <div>
-                <a href="#best">
-                    <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
-                </a>
-                
-                <h2>Pull the roulette wheel!</h2>
+            <div class="ruleta" id="ruleta2">
                 <div>
-                    <a href="#ruleta2">
-                        <img src="media/img/ruletaazul.png" alt="" class="girando">
-                    </a>                    
-                </div>
-
-            </div>
-        </div>
-        <div class="ruleta" id="ruleta2">
-            <div>
-                <a href="#best">
-                    <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>
-                </a>
-                <h2>Your turn...</h2>
-                <h2>A HEART!!</h2>
-                <img src="media/img/ruleta.png" alt="">
-                <div class="button">
-                    <a href="#ruleta1">
-                        <i class="fa-solid fa-rotate-left"></i>
+                    <a href="#best">
+                        <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>
                     </a>
+                    <h2>Your turn...</h2>
+                    <h2>A HEART!!</h2>
+                    <img src="media/img/ruleta.png" alt="">
+                    <div class="button">
+                        <a href="#ruleta1">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </a>
+                    </div>
                 </div>
-                
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about">
-        <h1>ABOUT US</h1>
-        <div>
-            <p>Nuestros tatuajes temporales combinan arte y sostenibilidad, ofreciendo diseños realistas creados por artistas tatuadores. Hechos con ingredientes naturales y cruelty-free, la tinta vegana se desvanece uniformemente en 15 días. Con una fácil aplicación y eliminación mediante un gel exfoliante, proporcionamos una forma libre y responsable de expresión personal.</p>
-            
-        </div>
-    </section>
-
-    <section id="faq">
-        <h1>FAQ's</h1>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    How long does a tattoo last?
-                </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Our tattoos are long lasting, and can last up to 15 days. It is applied in the same way as children's decals, by pressing the paper against the skin and moistening it. The difference with traditional decals is that the ink does not stay on the surface of the skin, but is absorbed by the skin hence its long duration.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Are this tattoos waterproof?
-                </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Sure, it will last up to 15 days.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    What color will my tattoo be?
-                </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        At the time of the ink will be a bluish color, but about 24 hours later, it will turn after about 24 hours, it will turn into black ink.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Are this tattoos safe?
-                </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Products are 100% safe and hypoallergenic for different skin types.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    How can i remove my tattoo?
-                </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        In addition, with each of our tattoos comes with a single dose of a hypoallergenic exfoliating gel, which allows the ink to be removed evenly before the 15 days have passed.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    What comes in my Ephemora pack?
-                </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo. the tattoo in a uniform way.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div id="conjunto">
-            <div class="preguntas">
-                
-
-                <div class="info">
-                    <div class="pregunta">
-                        <span class="ques">
-                            What comes in my Ephemora pack?
-                        </span>
-                        <i class="fa-solid fa-plus" style="color: #0000D2;"></i>
-                    </div>
-                    <div class="respuesta">
-                        Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo. the tattoo in a uniform way.
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-   <!-- <div class="rrss">
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-            </li>
-
-            <li>
-                <a href="https://www.pinterest.es/" target="_blank" title="Pinterest"><i class="fa-brands fa-pinterest" style="color: #ffffff;"></i></a>
-            </li>
-
-            <li>
-                <a href="https://www.tiktok.com/es/" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
-            </li>
-        </ul>
-    </div>
-    -->
-    <section id="clients">
-        <h1>OUR COMMUNITY</h1>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-3">
-                    <img src="media\img\Cliente4.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="media\img\Cliente5.jpg" alt="">
-                </div>
-                <div class="col-4">
-                    <img src="media\img\Cliente6.jpg" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="media\img\Cliente7.jpg" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="media\img\Cliente8.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="media\img\Cliente9.jpg" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="media\img\Cliente10.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div id="number">
-            
-        </div>
-        
-        <div id="comments">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="media/img/Cliente2.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                                <div>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="card-text">
-                                    "I've always wanted a tattoo but I didn't want to go through the pain of getting one. Ephemora is a perfect solution!"
-                                </p>
-                                
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="media/img/Cliente1.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                                <div>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="card-text">
-                                    "I got so many compliments on the tattoos and so many people thought they were real"
-                                </p>
-                                
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="media/img/Cliente3.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                                <div>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="card-text">
-                                    "I love Ephemora because I can try different tattoos, pain-free. They last a long time and look really good!"
-                                </p>
-                                
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        
-
-        <!-- <script>
-            var typed = new Typed('#element', {
-              strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-              typeSpeed: 50,
-            });
-        </script> -->
-        
-    </section>
-    <section id="subscribe">
-        <div class="subscribe">
-            <div id="subscribe_quest">
-                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
-            </div>
-            <form class="subscribe_email" id="subscribeForm" >
-                <input type="email" id="user" placeholder="Email" required>
-                <input type="submit" value="SEND" id="cerrar">
-            </form>
-        </div>
-        <!-- <div id="popupMessage">
+        <section id="about">
+            <h1>ABOUT US</h1>
             <div>
-                <h2>
-                    THANKS FOR SUSCRIBING!
-                </h2>
-                <a href="#subscribe">
-                <i class="fa-solid fa-xmark" style="color: #0000D2;" onclick="closePopup()"></i>
+                <p>Nuestros tatuajes temporales combinan arte y sostenibilidad, ofreciendo diseños realistas creados por artistas tatuadores. Hechos con ingredientes naturales y cruelty-free, la tinta vegana se desvanece uniformemente en 15 días. Con una fácil aplicación y eliminación mediante un gel exfoliante, proporcionamos una forma libre y responsable de expresión personal.</p>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h1>FAQ's</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How long does a tattoo last?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Our tattoos are long lasting, and can last up to 15 days. It is applied in the same way as children's decals, by pressing the paper against the skin and moistening it. The difference with traditional decals is that the ink does not stay on the surface of the skin, but is absorbed by the skin hence its long duration.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Are this tattoos waterproof?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sure, it will last up to 15 days.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What color will my tattoo be?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            At the time of the ink will be a bluish color, but about 24 hours later, it will turn after about 24 hours, it will turn into black ink.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Are this tattoos safe?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Products are 100% safe and hypoallergenic for different skin types.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        How can i remove my tattoo?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            In addition, with each of our tattoos comes with a single dose of a hypoallergenic exfoliating gel, which allows the ink to be removed evenly before the 15 days have passed.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        What comes in my Ephemora pack?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Our product is accompanied by a single dose of an exfoliating gel of an exfoliating gel to completely and evenly remove the tattoo. the tattoo in a uniform way.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients">
+            <h1>OUR COMMUNITY</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="media\img\Cliente4.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="media\img\Cliente5.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="media\img\Cliente6.jpg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="media\img\Cliente7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="media\img\Cliente8.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="media\img\Cliente9.jpg" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="media\img\Cliente10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="number"></div>
+            <div id="comments">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="media/img/Cliente2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="card-text">
+                                        "I've always wanted a tattoo but I didn't want to go through the pain of getting one. Ephemora is a perfect solution!"
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="media/img/Cliente1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="card-text">
+                                        "I got so many compliments on the tattoos and so many people thought they were real"
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="media/img/Cliente3.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="card-text">
+                                        "I love Ephemora because I can try different tattoos, pain-free. They last a long time and look really good!"
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="subscribe">
+                <div id="subscribe_quest">
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                </div>
+                <form class="subscribe_email" id="subscribeForm" >
+                    <input type="email" id="user" placeholder="Email" required>
+                    <input type="submit" value="SEND" id="cerrar">
+                </form>
+            </div>
+        </section>
+        
+        <section id="rrss">
+            <div>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/es/">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://x.com/?lang=es">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://es.pinterest.com/">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
-        </div> -->
-    </section>
-    
-    <section id="rrss">
-        <div>
-            <a href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/es/">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="https://x.com/?lang=es">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://es.pinterest.com/">
-                <i class="fa-brands fa-pinterest"></i>
-            </a>
-            <a href="https://www.youtube.com/">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <section id="footer_down">
-            
-            <div class="menu_footer">
-                <ul>
-                    <li>
-                        <a href="#description">How It Works?</a>
-                    </li>
-                    <li>
-                        <a href="#best">Best Sellers</a>
-                    </li>
-                    <li>
-                        <a href="product.html">Our Products</a>
-                    </li>
-                    <li>
-                        <a href="#about">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#faq">FAQ´S</a>
-                    </li>
-                    <li>
-                        <a href="#clients">Our Community</a>
-                    </li>
-                </ul>
-            </div>
-       
-        <div id="logo">
-            <img src="media/img/LogoFooter-03.png">
-        </div>
-
         </section>
-    
-    </footer>
 
-    <div class="top" id="scrollToTop">
-        <a href="#"><i class="fa-solid fa-up-long"></i></i></a>
+        <footer>
+            <section id="footer_down">
+                <div class="menu_footer">
+                    <ul>
+                        <li>
+                            <a href="#description">How It Works?</a>
+                        </li>
+                        <li>
+                            <a href="#best">Best Sellers</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Our Products</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ´S</a>
+                        </li>
+                        <li>
+                            <a href="#clients">Our Community</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <img src="media/img/LogoFooter-03.png">
+                </div>
+            </section>
+        </footer>
 
+        <div class="top" id="scrollToTop">
+            <a href="#"><i class="fa-solid fa-up-long"></i></i></a>
+        </div>
 
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/script.js"></script>
-
-</body>
+    </body>
 
 </html>
