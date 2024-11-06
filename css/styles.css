@@ -712,19 +712,38 @@ a {
 
 
 /* ABOUT US */
-#about {
+
+ #about {
+    width: 100%;
     height: 100vh;
+    background-image: url("/Users/agusestevez/Documents/Ephemora/media/img/about_us.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
     background-color: #0000D2;
     color: #DBE4F5;
-}
+    z-index: 1em;
+    padding-top: 5rem;
+  }
 
-#about h1 {
+
+
+
+#about h1,
+#about > div {
+    display: flex;
+    position: relative;
+    font-size: large;
+    z-index: 2; 
     padding-bottom: 1em;
 }
+
+
 
 #about > div {
     text-align: left;
     width: 50%;
+    padding-right: 4rem;
 }
 
 /* faq */
