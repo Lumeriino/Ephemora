@@ -92,7 +92,7 @@ window.addEventListener('scroll', () => {
 const icons = document.querySelectorAll('.fa-plus');
 
 icons.forEach(icon => {
-  icon.addEventListener('click', () => {
+  icon.addEventListener('click', (event) => {
 
     const respuesta = icon.parentElement.nextElementSibling;
 
@@ -101,6 +101,8 @@ icons.forEach(icon => {
     respuesta.style.display = respuesta.style.display === 'none' || respuesta.style.display === '' ? 'block' : 'none';
   });
 });
+
+
 
 // menu
 const menu = document.getElementById("menu");
@@ -225,3 +227,11 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
+
+const ruletaImg = document.querySelector('#ruleta1 img');
+
+// Añade un evento de clic para iniciar la rotación
+ruletaImg.addEventListener('click', () => {
+    // Añade la clase que activa la animación de rotación
+    ruletaImg.classList.add('girando');
+});

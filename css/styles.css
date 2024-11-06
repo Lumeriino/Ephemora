@@ -387,11 +387,15 @@ headerdetail {
 }
 
 #button img {
-    height: 75%;
+    width: 200px;
+    height: auto;
     object-fit: contain;
     padding: 1em 0;
 }
 
+.ruleta img:hover {
+    transform: scale(1.2);  
+}
 #button p {
     background-color: #ffffff;
     padding: 0.2em;
@@ -401,6 +405,40 @@ headerdetail {
     right: 0;
 }
 
+.ruleta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+@keyframes girarContinuo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.ruleta img.girando {
+    animation: girarContinuo 2s linear infinite; 
+}
+
+.ruleta div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ruleta img  {
+    max-width: 70%;
+    padding-top: 0%;
+    height: 50%;
+    display: block;
+    margin: 0 auto; 
+    padding: 1em 0;
+}
 
 /* best sellers */
 #best {
@@ -697,6 +735,8 @@ a {
     font-weight: 600 !important;
     color: #0000D2 !important;
 }
+
+
 
 /*CLIENTES */
 
