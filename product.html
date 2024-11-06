@@ -78,11 +78,35 @@
 
 
 
-    <section id="best">
-    <div>  
+    <section id="best2">
+      
         <h1>OUR PRODUCT</h1>
-        <div id="best_s">
-            <div class="best_s">
+        <div class="bestprod">
+            <a href="#filters">
+                <i class="fa-solid fa-sliders"></i>
+            </a>
+        </div>
+        <div class="mark2" id="filters">
+            <a href="#best2">
+                <i class="fa-solid fa-xmark" style="color: #0000D2;"></i>   
+            </a>
+            <h2 class="subrayado3">Filters</h2>
+            <div class="filter-options">
+                <div class="filter-section">
+                    <label><input type="checkbox" class="filter-category" value="cheap">    -15€</label><br>
+                    <label><input type="checkbox" class="filter-category" value="med">     15€-20€</label><br>
+                    <label><input type="checkbox" class="filter-category" value="exp">     +20€</label>
+                </div>
+                <div id="filtersb">
+                    <button class="filtersb" onclick="applyFilters()">Apply</button>
+                    <button class="filtersb" onclick="resetFilters()">Reset</button>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="best_s" >
+            <div class="best_s" data-category="cheap">
                 <div class="best_img">
                     <div class="mark">
                         <a class="circle2" href="#wishlist">
@@ -145,14 +169,12 @@
                             <div id="best_s">
                                 <div class="best_s">
                                     <div class="best_img">
-                                            <!-- Imagen original -->
                                         <img src="media/img/T8.jpg" class="main-img2">
                                     </div>
                                 </div>
                                     
                                 <div class="best_s">
                                     <div class="best_img">
-                                            <!-- Imagen original -->
                                         <img src="media/img/T4.jpg" class="main-img2">
                                     </div>
                                 </div>
@@ -166,7 +188,7 @@
                 </div>
             </div>
             
-            <div class="best_s">
+            <div class="best_s" data-category="cheap">
                 <div class="best_img">
                     <div class="mark">
                         <div class="circle2">
@@ -176,9 +198,7 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                     </div>
-                    <!-- Imagen original -->
                     <img src="media/img/T18.jpg" class="main-img">
-                    <!-- Imagen para mostrar en hover -->
                     <img src="media/img/T18_2.jpg" class="hover-img">
                 </div>
                 <div class="best_info">
@@ -186,7 +206,7 @@
                     <p>7€</p>
                 </div>
             </div>
-            <div class="best_s">
+            <div class="best_s" data-category="cheap">
                 <div class="best_img">
                     <div class="mark">
                         <div class="circle2">
@@ -196,9 +216,7 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                     </div>
-                    <!-- Imagen original -->
                     <img src="media/img/T17.jpg" class="main-img">
-                    <!-- Imagen para mostrar en hover -->
                     <img src="media/img/T17_2.jpg" class="hover-img">
                 </div>
                 <div class="best_info">
@@ -208,28 +226,28 @@
             </div>
                
         </div>    
-            <div id="best_s">
-                <div class="best_s">
-                    <div class="best_img">
-                        <div class="mark">
-                            <div class="circle2">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div class="circle2">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
+        
+
+        <div id="best_s">
+            <div class="best_s" data-category="cheap">
+                <div class="best_img">
+                    <div class="mark">
+                        <div class="circle2">
+                            <i class="fa-solid fa-heart"></i>
                         </div>
-                        <!-- Imagen original -->
-                        <img src="media/img/T3.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
+                        <div class="circle2">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <img src="media/img/T3.jpg" class="main-img">
                         <img src="media/img/T3_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
                         <p>Tiny Dancers</p>
-                        <p>12€</p>
+                        <p>7€</p>
                     </div>
-                </div>
-                <div class="best_s">
+            </div>
+            <div class="best_s" data-category="cheap">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -239,17 +257,15 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T1.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T1_1.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
                         <p>Moiety</p>
                         <p>12€</p>
                     </div>
-                </div>
-                <div class="best_s">
+            </div>
+            <div class="best_s" data-category="cheap">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -259,20 +275,18 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T4.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T4_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
                         <p>Willughby</p>
-                        <p>7€</p>
+                        <p>12€</p>
                     </div>
-                </div>   
-            </div>  
+            </div>   
+        </div>  
             
             <div id="best_s">
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -282,9 +296,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T2.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T2_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -292,7 +304,7 @@
                         <p>15€</p>
                     </div>
                 </div>   
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -302,9 +314,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T16.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T16_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -312,7 +322,7 @@
                         <p>16€</p>
                     </div>
                 </div>   
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -322,9 +332,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T15.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T15_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -335,7 +343,7 @@
             </div>
 
             <div id="best_s">
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -345,9 +353,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T8.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T8_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -355,7 +361,7 @@
                         <p>17€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -365,9 +371,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T14.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T14_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -375,7 +379,7 @@
                         <p>17€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -385,9 +389,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T13.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T13_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -398,7 +400,7 @@
             </div>
 
             <div id="best_s">
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -408,9 +410,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T5.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T5_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -418,7 +418,7 @@
                         <p>18€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -428,9 +428,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T7.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T7_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -438,7 +436,7 @@
                         <p>18€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="med">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -448,20 +446,18 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T12.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T12_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
                         <p>Follow My Voice</p>
-                        <p>23€</p>
+                        <p>20€</p>
                     </div>
                 </div>    
             </div>
 
             <div id="best_s">
-                <div class="best_s">
+                <div class="best_s" data-category="exp">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -471,9 +467,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T11.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T11_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -481,7 +475,7 @@
                         <p>23€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="exp">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -491,9 +485,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T10.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T10_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
@@ -501,7 +493,7 @@
                         <p>23€</p>
                     </div>
                 </div> 
-                <div class="best_s">
+                <div class="best_s" data-category="exp">
                     <div class="best_img">
                         <div class="mark">
                             <div class="circle2">
@@ -511,9 +503,7 @@
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
-                        <!-- Imagen original -->
                         <img src="media/img/T6.jpg" class="main-img">
-                        <!-- Imagen para mostrar en hover -->
                         <img src="media/img/T6_2.jpg" class="hover-img">
                     </div>
                     <div class="best_info">
