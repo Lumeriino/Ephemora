@@ -413,25 +413,19 @@ headerdetail {
     right: 0;
 }
 
-.ruleta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-}
-
-@keyframes girarContinuo {
+.girando {
+    animation: girar 2s 1 ; 
+  }
+  
+  @keyframes girar {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-.ruleta img.girando {
-    animation: girarContinuo 3s linear 2;
-    
-}
+  }
+  
 
 .ruleta div {
     display: flex;
@@ -1667,6 +1661,9 @@ footer {
 
     /* best sellers */
 
+    .ruleta {
+        height: 70vh;
+    }
     .ruleta > div {
         height: 50%;
     }

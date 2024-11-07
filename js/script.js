@@ -148,18 +148,24 @@ $("#comprar").on("click", function () {
 });
 
 // ruleta
-const ruletaImg = document.querySelector('#ruleta2 img');
+document.addEventListener("DOMContentLoaded", function () {
+    const imagenRuleta = document.querySelector("#ruleta1 .girando");
+  
+    function iniciarGiro() {
+      imagenRuleta.classList.add("girando"); 
+      setTimeout(detenerGiro, 4000); 
+    }
+  
+    function detenerGiro() {
+      imagenRuleta.classList.remove("girando"); 
+    }
+  
+    
+    const contenedorRuleta = document.getElementById("ruleta1");
+    contenedorRuleta.addEventListener("mouseenter", iniciarGiro);
+  });
 
-ruletaImg.addEventListener('click', () => {
- 
-    ruletaImg.classList.add('girando');
-
-    const tiempoTotal = 3 * 2 * 1000; 
-
-    setTimeout(() => {
-        ruletaImg.classList.remove('girando');
-    }, 5 );
-});
+  document.addEventListener("DOMContentLoaded", iniciarGiro);
 
 //Customers
 var typed = new Typed('#number', {
