@@ -269,3 +269,7 @@ function resetFilters() {
       item.style.display = "block"; 
   });
 }
+
+// aos
+
+AOS.init();
