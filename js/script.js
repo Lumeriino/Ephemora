@@ -78,32 +78,6 @@ ageInputScreen.appendChild(submitButton);
 
 document.body.appendChild(ageInputScreen);
 
-
-
-// scroll
-window.addEventListener('scroll', () => {
-  const scrollValue = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
-  
-  document.querySelectorAll(".rotatingImage").forEach((img)=> {img.style.setProperty('--scroll', scrollValue);
-  });
-});
-
-// FAQ
-// const icons = document.querySelectorAll('.fa-plus');
-
-// icons.forEach(icon => {
-//   icon.addEventListener('click', (event) => {
-
-//     const respuesta = icon.parentElement.nextElementSibling;
-
-//     icon.classList.toggle('icon');
-
-//     respuesta.style.display = respuesta.style.display === 'none' || respuesta.style.display === '' ? 'block' : 'none';
-//   });
-// });
-
-
-
 // menu
 const menu = document.getElementById("menu");
 const menuToggle = document.getElementById("menuToggle");
@@ -142,14 +116,13 @@ function closeAppHandler() {
 
  closeApp.addEventListener("click", closeAppHandler);
 
-// Suscribe
-document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  
-  document.getElementById("user").value = "";
-  alert("Thanks for suscribing!");
+// scroll
+window.addEventListener('scroll', () => {
+    const scrollValue = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
+    
+    document.querySelectorAll(".rotatingImage").forEach((img)=> {img.style.setProperty('--scroll', scrollValue);
+    });
 });
-
 
 // buy
 document.getElementById("cost").innerHTML = "0€";
@@ -167,57 +140,14 @@ function totalCost() {
     }
 }
 
-document.getElementById("comprar").onclick = function () {
-  // const total = document.getElementById.innerHTML;
-  console.log("primerboton")
-  alert("Thank you for your purchase!!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-}
-
-// document.getElementById("comprarprod").onclick = function () {
-//   // const total = document.getElementById("total").innerHTML;
-//   console.log("segundoboton")
-
-//   alert("Thank you for your purchase!!");
-//   document.getElementById("cost").innerHTML = "0€";
-//   document.getElementById("numberCost").value = "";
-// };
-
-// document.getElementById("comprar_cart").onclick = function () {
-//   // const total = document.getElementById.innerHTML;
-//   console.log("tercerboton")
-
-//   alert("Thank you for your purchase!!");
-//   document.getElementById("cost").innerHTML = "0€";
-//   document.getElementById("numberCost").value = "";
-// }
-
-//Customers
-var typed = new Typed('#number', {
-  strings: ['<h1>1.542</h1> <h2>SATISFIED CLIENTS</h2>'],
-
-  typeSpeed: 80,
-  loop: true,
+$("#comprar").on("click", function () {
+    console.log("primerboton");
+    alert("Thank you for your purchase!!");
+    $("#cost").html("0€");
+    $("#numberCost").val("");
 });
 
-//CART
-// $('.slider-for').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-// $('.slider-nav').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-
+// ruleta
 const ruletaImg = document.querySelector('#ruleta2 img');
 
 ruletaImg.addEventListener('click', () => {
@@ -231,6 +161,21 @@ ruletaImg.addEventListener('click', () => {
     }, 5 );
 });
 
+//Customers
+var typed = new Typed('#number', {
+  strings: ['<h1>1.542</h1> <h2>SATISFIED CLIENTS</h2>'],
+
+  typeSpeed: 80,
+  loop: true,
+});
+
+// Suscribe
+document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    document.getElementById("user").value = "";
+    alert("Thanks for suscribing!");
+  });
 
 // aos
 

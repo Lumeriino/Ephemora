@@ -1,4 +1,4 @@
-
+// menu
 const menu = document.getElementById("menu");
 const menuToggle = document.getElementById("menuToggle");
 const closeMenu = document.getElementById("closeMenu");
@@ -31,9 +31,6 @@ function toggleApplication() {
 function closeAppHandler() {
   button.classList.remove("active"); 
 }
-  
-// applicationElement.addEventListener("click", toggleApplication);
-// closeApp.addEventListener("click", closeAppHandler);
 
 // buy
 document.getElementById("cost").innerHTML = "0€";
@@ -51,11 +48,9 @@ function totalCost() {
     }
 }
 
-document.getElementById("comprarcart").onclick = function () {
-  // const total = document.getElementById.innerHTML;
-  console.log("tercerboton")
-
+$("#comprarcart").on("click", function () {
+  console.log("tercerboton");
   alert("Thank you for your purchase!!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-}
+  $("#cost").html("0€");
+  $("#numberCost").val("");
+});
