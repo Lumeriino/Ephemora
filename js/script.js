@@ -138,9 +138,9 @@ function closeAppHandler() {
     button.classList.remove("active"); 
 }
 
-applicationElement.addEventListener("click", toggleApplication);
+// applicationElement.addEventListener("click", toggleApplication);
 
-closeApp.addEventListener("click", closeAppHandler);
+// closeApp.addEventListener("click", closeAppHandler);
 
 // Suscribe
 document.getElementById("subscribeForm").addEventListener("submit", function(event) {
@@ -175,23 +175,23 @@ document.getElementById("comprar").onclick = function () {
   document.getElementById("numberCost").value = "";
 }
 
-// document.getElementById("comprarprod").onclick = function () {
-//   // const total = document.getElementById("total").innerHTML;
-//   console.log("segundoboton")
+document.getElementById("comprarprod").onclick = function () {
+  // const total = document.getElementById("total").innerHTML;
+  console.log("segundoboton")
 
-//   alert("Thanks!");
-//   document.getElementById("cost").innerHTML = "0€";
-//   document.getElementById("numberCost").value = "";
-// };
+  alert("Thanks!");
+  document.getElementById("cost").innerHTML = "0€";
+  document.getElementById("numberCost").value = "";
+};
 
-// document.getElementById("comprar_cart").onclick = function () {
-//   // const total = document.getElementById.innerHTML;
-//   console.log("tercerboton")
+document.getElementById("comprar_cart").onclick = function () {
+  // const total = document.getElementById.innerHTML;
+  console.log("tercerboton")
 
-//   alert("Thank you for your purchase!!");
-//   document.getElementById("cost").innerHTML = "0€";
-//   document.getElementById("numberCost").value = "";
-// }
+  alert("Thank you for your purchase!!");
+  document.getElementById("cost").innerHTML = "0€";
+  document.getElementById("numberCost").value = "";
+}
 
 //Customers
 var typed = new Typed('#number', {
