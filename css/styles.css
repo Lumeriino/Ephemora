@@ -2094,6 +2094,73 @@ footer {
 */ 
 
 @media screen and (max-width: 550px) {
+
+    /*PAGINA INICIAL*/
+
+    .ruleta > div {
+        background-color: #DBE4F5 !important;
+        color: #0000D2;
+        width: 75%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 50px;
+        
+    }
+
+    #ruleta1 > div > div > a {
+        height: 450px;
+        width: 10em;
+    }
+
+    .ruleta img {
+        max-width: 300%;
+        padding-top: 0%;
+        height: 50%;
+        
+    }
+
+
+
+    #about {
+        background-color: #0000D2;
+        color: #DBE4F5;
+        z-index: 2;
+        padding-top: 5rem;
+        position: relative;
+        height: 100vh  !important;
+    
+    }
+    
+    .image-container {
+        width: 100% !important;
+        height: 100vh  !important;
+        bottom: 0  !important;
+        right: 0 !important;
+        position: absolute !important;
+        background-image: url("../media/img/about_us.png");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+    
+    
+    #about h1,
+    #about > div {
+        display: contents;
+    }
+    
+    
+    
+    #about > div {
+        display: contents;
+        text-align: center;
+        font-size: small;
+    }
+
+    /*PAGINA PRINCIPAL*/
 /*PAGINA PRODUCT*/
     section {
         padding: 0;
@@ -2191,9 +2258,7 @@ footer {
     }
 
     #best img {
-        filter: grayscale(100);
-        aspect-ratio: 1/1;
-        object-fit: cover;
+        
     }
 
     #best_s {
