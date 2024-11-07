@@ -138,9 +138,9 @@ function closeAppHandler() {
     button.classList.remove("active"); 
 }
 
-// applicationElement.addEventListener("click", toggleApplication);
+ applicationElement.addEventListener("click", toggleApplication);
 
-// closeApp.addEventListener("click", closeAppHandler);
+ closeApp.addEventListener("click", closeAppHandler);
 
 // Suscribe
 document.getElementById("subscribeForm").addEventListener("submit", function(event) {
