@@ -1325,8 +1325,8 @@ footer {
         height: 10vh;        
         padding: 0.5em;
         display: flex;
-        justify-content: flex-end;
         padding-right: 2em;
+        padding-left: 2em;
     }
 
     #menu img, #menu > a {
@@ -1383,6 +1383,37 @@ footer {
     }
     /*PAGINA INICIAL*/
     
+    header {
+        height: 40vh;
+    }
+    #logo {
+        height: 85%;
+    }
+
+    #title {
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        font-size: smaller;
+        
+    }
+
+    #description h1 {
+        line-height: 1em !important;
+        
+    }
+
+    #caract_all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .caract p {
+        
+    }
 
     #button div {
         width: 100%;
@@ -1448,6 +1479,7 @@ footer {
         flex-direction: column;
         align-items: baseline;
         padding-left: 1rem;
+        height: 20vh;
         
         
     }
@@ -1502,9 +1534,10 @@ footer {
         text-align: center; 
     }
 
-    /* #best img {
-        
-    } */
+    .best_s {
+        width: 80%;
+        flex-direction: row;
+    }
 
     #best_s {
         display: flex;
@@ -1632,178 +1665,5 @@ footer {
 }
 
    
-}
-
-@media screen and (max-width: 900px) {
-
-    header {
-        height: 60vh; 
-    }
-    
-    #menu {
-        height: 10vh;        
-        padding: 0.5em;
-        justify-content: space-between;
-    }
-
-    #menu img, #menu > a {
-        height: 80%; 
-    }
-
-    #menu > div { 
-        width: 15%;
-        height: 70%;
-    }
-
-    #menuToggle {
-        background-color: #0000D2;
-        border-radius: 50px;
-        height: 100%;
-        padding: 0.2em 0.5em;
-    }
-
-    #menu_b {
-        width: 80%;
-    }
-
-    #menu ul {
-        width: 50%;
-        height: 100vh;
-        right: -100vw;
-        padding: 1.5em;
-        font-size: 0.9em; 
-        transition: right 0.3s ease; 
-    }
-
-    #menu.active ul {
-        right: 0;
-    }
-
-    #menu ul li {
-        padding: 0.5em; 
-    }
-
-    #menu ul li:first-child {
-        padding-bottom: 2em;
-    }
-
-    #menu ul li:first-child i {
-        font-size: 1.5em; 
-    }
-
-    #menu ul li a {
-        font-size: 0.9em; 
-    }
-
-    #logo {
-        padding: 1.5em 0 0 0; 
-    }
-
-    #best {
-        width: 100%;
-        padding: 1em; 
-    }
-
-    #best h1 {
-        font-size: 1.5em; 
-        padding-bottom: 0.3em;
-        text-align: center; 
-    }
-
-    #best img {
-        filter: grayscale(100);
-        aspect-ratio: 1/1;
-        object-fit: cover;
-    }
-
-    #best_s {
-        display: flex;
-        justify-content: center; 
-        gap: 1em;
-    }
-
-    #best2 h1 {
-        font-size: small;
-    }
-    .mark {
-        position: absolute;
-        padding: 0.3em;
-        flex-direction: row; 
-        top: 0.3em; 
-        left: 0.3em;
-    }
-
-    .circle2 {
-        height: 45px; 
-        width: 45px;
-        border-radius: 25px;
-        margin-right: 0.5em;
-    }
-
-    .circle2 i {
-        font-size: 1.5em; 
-    }
-
-    .fa-solid {
-        font-size: 1.8em; 
-    }
-
-    .best_img img {
-        width: 100%;
-        padding-bottom: 0.3em;
-    }
-
-    .best_info {
-        font-size: small;
-    }
-
-    .best_info p {
-        font-size: 1em; 
-    }
-
-    .mark2 {
-        width: 100vw; 
-        height: 70vh; 
-        padding: 1em;
-        right: 0;
-        top: 10vh; 
-        overflow-y: auto; 
-    }
-
-    .mark2 h2 {
-        font-size: 1.5em; 
-        width: 80%;
-    }
-
-    .mark2 img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-    }
-
-    .infobuy > a > i {
-        justify-content: center !important;
-    }
-
-    .infobuy {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 1em;
-    }
-
-    .mark2 > div {
-        height: auto;
-    }
-
-    .mark2  a i {
-        font-size: 1.5em;
-    }
-
-    a {
-        text-decoration: none !important;
-    }
-
-
 }
 
