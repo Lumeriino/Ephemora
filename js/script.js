@@ -175,23 +175,23 @@ document.getElementById("comprar").onclick = function () {
   document.getElementById("numberCost").value = "";
 }
 
-document.getElementById("comprarprod").onclick = function () {
-  // const total = document.getElementById("total").innerHTML;
-  console.log("segundoboton")
+// document.getElementById("comprarprod").onclick = function () {
+//   // const total = document.getElementById("total").innerHTML;
+//   console.log("segundoboton")
 
-  alert("Thanks!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-};
+//   alert("Thank you for your purchase!!");
+//   document.getElementById("cost").innerHTML = "0€";
+//   document.getElementById("numberCost").value = "";
+// };
 
-document.getElementById("comprar_cart").onclick = function () {
-  // const total = document.getElementById.innerHTML;
-  console.log("tercerboton")
+// document.getElementById("comprar_cart").onclick = function () {
+//   // const total = document.getElementById.innerHTML;
+//   console.log("tercerboton")
 
-  alert("Thank you for your purchase!!");
-  document.getElementById("cost").innerHTML = "0€";
-  document.getElementById("numberCost").value = "";
-}
+//   alert("Thank you for your purchase!!");
+//   document.getElementById("cost").innerHTML = "0€";
+//   document.getElementById("numberCost").value = "";
+// }
 
 //Customers
 var typed = new Typed('#number', {
@@ -231,44 +231,6 @@ ruletaImg.addEventListener('click', () => {
     }, 5 );
 });
 
-// FILTERS
-function applyFilters() {
-  const selectedPrices = Array.from(document.querySelectorAll(".filter-price:checked")).map(cb => cb.value);
-  const selectedCategories = Array.from(document.querySelectorAll(".filter-category:checked")).map(cb => cb.value);
-
-  const products = document.querySelectorAll("#best_s .best_s");
-
-  products.forEach(item => {
-      const itemPrice = parseInt(item.getAttribute("data-price"), 10);
-      const itemCategory = item.getAttribute("data-category");
-
-      let priceMatch = selectedPrices.length === 0 || 
-          (selectedPrices.includes("under-10") && itemPrice < 10) ||
-          (selectedPrices.includes("10-20") && itemPrice >= 10 && itemPrice <= 20) ||
-          (selectedPrices.includes("over-20") && itemPrice > 20);
-
-      let categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(itemCategory);
-
-      if (priceMatch && categoryMatch) {
-          item.style.display = "block"; 
-      } else {
-          item.style.display = "none";
-      }
-  });
-}
-
-function resetFilters() {
-  const priceCheckboxes = document.querySelectorAll(".filter-price");
-  const categoryCheckboxes = document.querySelectorAll(".filter-category");
-
-  priceCheckboxes.forEach(cb => cb.checked = false);
-  categoryCheckboxes.forEach(cb => cb.checked = false);
-
-  const products = document.querySelectorAll("#best_s .best_s");
-  products.forEach(item => {
-      item.style.display = "block"; 
-  });
-}
 
 // aos
 
