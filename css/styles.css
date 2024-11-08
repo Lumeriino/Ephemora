@@ -376,6 +376,10 @@ headerdetail {
     color: #0000D2;
 }
 
+#best h2 {
+    padding-bottom: 0.75em;
+}
+
 #best img {
     filter: grayscale(100);
     aspect-ratio: 1/1;
@@ -1493,7 +1497,7 @@ footer {
     }
 
     /* CLIENTS */
-    #clients h1 {
+    #clients h1, #about h1, #best2 h1 {
         line-height: 1em !important;
     }
 
