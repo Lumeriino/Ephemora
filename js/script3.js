@@ -48,9 +48,22 @@ function totalCost() {
     }
 }
 
-$("#comprarcart").on("click", function () {
-  console.log("tercerboton");
-  alert("Thank you for your purchase!!");
-  $("#cost").html("0€");
-  $("#numberCost").val("");
+$(document).ready(function() {
+  $("#comprarcart").prop("disabled", true);
+
+  $("#numberCost").on("input", function() {
+      if ($(this).val() > 0) {
+          $("#comprarcart").prop("disabled", false);
+      } else {
+          $("#comprarcart").prop("disabled", true);
+      }
+  });
+
+  $("#comprarcart").on("click", function() {
+      console.log("primerboton");
+      alert("Thank you for your purchase!!");
+      $("#cost").html("0€");
+      $("#numberCost").val("");
+      $(this).prop("disabled", true);
+  });
 });

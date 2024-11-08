@@ -48,11 +48,24 @@ function totalCost() {
   }
 }
 
-$("#comprarprod").on("click", function () {
-    console.log("segundoboton");
-    alert("Thank you for your purchase!!");
-    $("#cost").html("0€");
-    $("#numberCost").val("");
+$(document).ready(function() {
+    $("#comprarprod").prop("disabled", true);
+
+    $("#numberCost").on("input", function() {
+        if ($(this).val() > 0) {
+            $("#comprarprod").prop("disabled", false);
+        } else {
+            $("#comprarprod").prop("disabled", true);
+        }
+    });
+
+    $("#comprarprod").on("click", function() {
+        console.log("primerboton");
+        alert("Thank you for your purchase!!");
+        $("#cost").html("0€");
+        $("#numberCost").val("");
+        $(this).prop("disabled", true);
+    });
 });
 
 // FILTERS

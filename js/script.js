@@ -141,12 +141,26 @@ function totalCost() {
     }
 }
 
-$("#comprar").on("click", function () {
-    console.log("primerboton");
-    alert("Thank you for your purchase!!");
-    $("#cost").html("0€");
-    $("#numberCost").val("");
+$(document).ready(function() {
+    $("#comprar").prop("disabled", true);
+
+    $("#numberCost").on("input", function() {
+        if ($(this).val() > 0) {
+            $("#comprar").prop("disabled", false);
+        } else {
+            $("#comprar").prop("disabled", true);
+        }
+    });
+
+    $("#comprar").on("click", function() {
+        console.log("primerboton");
+        alert("Thank you for your purchase!!");
+        $("#cost").html("0€");
+        $("#numberCost").val("");
+        $(this).prop("disabled", true);
+    });
 });
+
 
 //Customers
 var typed = new Typed('#number', {

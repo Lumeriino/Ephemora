@@ -1382,6 +1382,11 @@ footer {
         height: 40vh;
     }
 
+    /* HOME PAGE > menu */
+    #menu > div {
+        width: 25%;
+    }
+
     /* HOME PAGE > logo grande*/
     #logo {
         height: 85%;
