@@ -394,7 +394,7 @@ headerdetail {
 }
 
 #ruleta1 > div > div > a {
-    height: 800px;
+    /* height: 800px; */
     width: 40em;
 }
 
@@ -1520,7 +1520,7 @@ footer {
     }
 
     #ruleta1 > div > div > a {
-        height: 600px;
+        height: 340px;
         width: 30em;
     }
 
@@ -1668,11 +1668,11 @@ footer {
         height: 70vh;
     }
     .ruleta > div {
-        height: 50%;
+        height: 70%;
     }
 
     #ruleta1 > div > div > a {
-        height: 450px;
+        height: 230px;
         width: 10em;
     }
 

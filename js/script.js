@@ -147,26 +147,6 @@ $("#comprar").on("click", function () {
     $("#numberCost").val("");
 });
 
-// ruleta
-// document.addEventListener("DOMContentLoaded", function () {
-//     const imagenRuleta = document.querySelector("#ruleta1 .girando");
-  
-//     function iniciarGiro() {
-//       imagenRuleta.classList.add("girando"); 
-//       setTimeout(detenerGiro, 4000); 
-//     }
-  
-//     function detenerGiro() {
-//       imagenRuleta.classList.remove("girando"); 
-//     }
-  
-    
-//     const contenedorRuleta = document.getElementById("ruleta1");
-//     contenedorRuleta.addEventListener("mouseenter", iniciarGiro);
-// });
-
-//   document.addEventListener("DOMContentLoaded", iniciarGiro);
-
 //Customers
 var typed = new Typed('#number', {
   strings: ['<h1>1.542</h1> <h2>SATISFIED CLIENTS</h2>'],
