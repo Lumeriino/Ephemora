@@ -742,6 +742,11 @@ headerdetail {
     width: 100%;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .row div {
     padding: 15px;
 }
@@ -1486,6 +1491,12 @@ footer {
         text-align: center;
         font-size: small;
     }
+
+    /* CLIENTS */
+    #clients h1 {
+        line-height: 1em !important;
+    }
+
 
     /* SUBSCRIBE */
     #subscribe_quest {
