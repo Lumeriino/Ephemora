@@ -376,7 +376,7 @@ headerdetail {
     color: #0000D2;
 }
 
-#best h2 {
+#best > div > h2 {
     padding-bottom: 0.75em;
 }
 
